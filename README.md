@@ -1,7 +1,6 @@
 # LFSR -Linear Feedback Shift Register
 ## MATLAB CODE for LFRS
-### THis MATLAB Code work for any length of LFSR with given taps (feedback polynomial) -Universal
-### There are two files LFSRnik1.m an LFSRnik2.m
+### This MATLAB Code work for any length of LFSR with given taps (feedback polynomial) -Universal, There are two files LFSRnik1.m an LFSRnik2.m
 ### LFSRnik1
 This function will return all the states of LFSR and will check Three fundamental Property of LFSR 
 (1) Balance Property (2) Runlength Property (3) Autocorrelation Property
@@ -9,4 +8,10 @@ This function will return all the states of LFSR and will check Three fundamenta
 ### LFSRnik2
 This function will return only generated sequence will all the states of LFSR, no verification of properties are done
 here. Use this function to avoid verification each time you execute the program
-
+=====
+If any doubt, confusion or feedback please contact me
+NIKESH BAJAJ 
+http://nikeshbajaj.in
+bajaj.nikkey@gmail.com
+Asst. Professor at Lovely Profesional University
+Masters from Aligarh Muslim University,India
