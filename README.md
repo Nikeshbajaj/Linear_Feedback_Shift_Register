@@ -21,8 +21,8 @@ This function will return all the states of LFSR and will check Three fundamenta
 This function will return only generated sequence will all the states of LFSR, no verification of properties are done
 here. Use this function to avoid verification each time you execute the program.
 
-### LFSRnik3 Faster
-seq = LFSRnik3(s,t,N)
+### LFSRnik3 (faster)
+<p>seq = LFSRnik3(s,t,N)</p>
 this function generates N bit sequence only. This is faster then other two functions, as this does not gives each state of LFSR
 
 ## Tips
