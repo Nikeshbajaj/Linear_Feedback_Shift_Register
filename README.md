@@ -1,4 +1,7 @@
 # LFSR -Linear Feedback Shift Register
+<p align="right">
+  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR.jpg" width="200"/>
+</p>
 Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
 This will also check Three fundamental Property of LFSR 
 * (1) Balance Property 
