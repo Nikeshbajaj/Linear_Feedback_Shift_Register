@@ -33,6 +33,6 @@ ______________________________________
 If any doubt, confusion or feedback please contact me
 ### Nikesh Bajaj
 ### http://nikeshbajaj.in
-⋅⋅⋅n.bajaj@qmul.ac.uk, bajaj⋅⋅⋅
-⋅⋅⋅nikkey@gmail.com⋅⋅⋅
-⋅⋅⋅PhD Student, Queen Mary University of London & University of Genoa⋅⋅⋅
+<p> n.bajaj@qmul.ac.uk, bajaj </p>
+<p> nikkey@gmail.com </p>
+<p> ##### PhD Student, Queen Mary University of London & University of Genoa </p>
