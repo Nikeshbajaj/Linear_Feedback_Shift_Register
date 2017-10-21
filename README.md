@@ -7,7 +7,7 @@ This will also check Three fundamental Property of LFSR
 
 
 <p align="left">
-  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR1.jpg" width="300"/>
+  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR1.jpg" width="500"/>
 </p>
 
 
