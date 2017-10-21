@@ -1,12 +1,14 @@
 # LFSR -Linear Feedback Shift Register
-<p align="right">
-  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR.jpg" width="200"/>
-</p>
 Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
 This will also check Three fundamental Property of LFSR 
 * (1) Balance Property 
 * (2) Runlength Property 
 * (3) Autocorrelation Property
+
+
+<p align="right">
+  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR.jpg" width="300"/>
+</p>
 
 
 ## MATLAB CODE for LFRS
@@ -31,6 +33,5 @@ ______________________________________
 If any doubt, confusion or feedback please contact me
 ### Nikesh Bajaj
 ### http://nikeshbajaj.in
-bajaj.nikkey@gmail.com
-Asst. Professor at Lovely Profesional University
-Masters from Aligarh Muslim University,India
+n.bajaj@qmul.ac.uk, bajaj.nikkey@gmail.com
+PhD Student, Queen Mary University of London & University of Genoa
