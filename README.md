@@ -1,4 +1,11 @@
 # LFSR -Linear Feedback Shift Register
+Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
+This will also check Three fundamental Property of LFSR 
+* (1) Balance Property 
+* (2) Runlength Property 
+* (3) Autocorrelation Property
+
+
 ## MATLAB CODE for LFRS
 ### This MATLAB Code work for any length of LFSR with given taps (feedback polynomial) -Universal, There are three files LFSRnik1.m an LFSRnik2.m, LFSRnik3.m
 ### LFSRnik1
