@@ -4,8 +4,6 @@ This will also check Three fundamental Property of LFSR
 * (1) Balance Property 
 * (2) Runlength Property 
 * (3) Autocorrelation Property
-<img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR1.jpg" width="500"/>
-
 <p align="center">
   <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR1.jpg" width="500"/>
 </p>
