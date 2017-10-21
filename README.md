@@ -6,8 +6,8 @@ This will also check Three fundamental Property of LFSR
 * (3) Autocorrelation Property
 
 
-<p align="right">
-  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR.jpg" width="300"/>
+<p align="left">
+  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR1.jpg" width="300"/>
 </p>
 
 
