@@ -35,4 +35,4 @@ If any doubt, confusion or feedback please contact me
 ### http://nikeshbajaj.in
 <p> n.bajaj@qmul.ac.uk </p>
 <p> bajaj[dot]nikkey [AT]gmail[dot]com </p>
-##### PhD Student, Queen Mary University of London & University of Genoa </p>
+#### PhD Student, Queen Mary University of London & University of Genoa </p>
