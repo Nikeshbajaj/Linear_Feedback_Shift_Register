@@ -83,13 +83,35 @@ This will also check Three fundamental Property of LFSR
 This function will return all the states of LFSR and will check Three fundamental Property of LFSR 
 (1) Balance Property (2) Runlength Property (3) Autocorrelation Property
 
+#### EXAMPLE
+```
+>>s=[1 1 0 0 1] 
+>>t=[5 2]
+>>[seq c] =LFSRnik1(s,t)
+``
+
 ### LFSRnik2
 This function will return only generated sequence will all the states of LFSR, no verification of properties are done
 here. Use this function to avoid verification each time you execute the program.
+#### EXAMPLE
+```
+>>s=[1 1 0 0 1] 
+>>t=[5 2]
+>>[seq c] =LFSRnik1(s,t)
+``
 
 ### LFSRnik3 (faster)
 <p>seq = LFSRnik3(s,t,N)</p>
 this function generates N bit sequence only. This is faster then other two functions, as this does not gives each state of LFSR
+
+#### EXAMPLE
+```
+>>s=[1 1 0 0 1]  
+>>t=[5 2]
+>>seq =LFSRnik3(s,t,50)
+``
+
+
 
 ## Tips
 * If you want to use this function in middle of any program, use LFSRnik2 or LFSRnik1 with verification =0. 
