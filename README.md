@@ -1,6 +1,5 @@
 # LFSR -Linear Feedback Shift Register
 <p align="center">
-  <img src="https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/blob/master/LFSR1.jpg" width="200"/>
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/LFSR1.jpg" width="300"/>
 </p>
 
