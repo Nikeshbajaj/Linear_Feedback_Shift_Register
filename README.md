@@ -67,13 +67,11 @@ b1 = R1.state[8]
 b2 = R1.state[10]
 b3 = R1.state[10]
 
-
 ```
+______________________________________
+______________________________________
 
-
-
-
-## MATLAB
+# MATLAB
 Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
 This will also check Three fundamental Property of LFSR 
 * (1) Balance Property 
