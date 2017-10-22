@@ -88,7 +88,7 @@ This function will return all the states of LFSR and will check Three fundamenta
 >>s=[1 1 0 0 1] 
 >>t=[5 2]
 >>[seq c] =LFSRnik1(s,t)
-``
+```
 
 ### LFSRnik2
 This function will return only generated sequence will all the states of LFSR, no verification of properties are done
@@ -98,7 +98,7 @@ here. Use this function to avoid verification each time you execute the program.
 >>s=[1 1 0 0 1] 
 >>t=[5 2]
 >>[seq c] =LFSRnik1(s,t)
-``
+```
 
 ### LFSRnik3 (faster)
 <p>seq = LFSRnik3(s,t,N)</p>
@@ -109,7 +109,7 @@ this function generates N bit sequence only. This is faster then other two funct
 >>s=[1 1 0 0 1]  
 >>t=[5 2]
 >>seq =LFSRnik3(s,t,50)
-``
+```
 
 
 
