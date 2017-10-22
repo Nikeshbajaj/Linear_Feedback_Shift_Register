@@ -4,7 +4,8 @@
 </p>
 
 # Python
-class LFSR(fpoly=[5,2],initstate='ones',verbose=False)
+
+Requirement : numpy
 
 ### Example  ## 5 bit LFSR with x^5 + x^2 + 1
 ```
@@ -54,7 +55,7 @@ class LFSR(fpoly=[5,2],initstate='ones',verbose=False)
 >>>seq1 = L.runKCycle(20)
 ```
 
-## For A5/1 GSM Stream cipher generator
+## For A5/1 GSM Stream cipher generator (Hint)
 ```
 # Three LFSRs initialzed with 'ones' though they are intialized with encription key
 R1 = LFSR(fpoly = [19,18,17,14])
@@ -102,4 +103,4 @@ If any doubt, confusion or feedback please contact me
 ### http://nikeshbajaj.in
 <p> n.bajaj@qmul.ac.uk </p>
 <p> bajaj[dot]nikkey [AT]gmail[dot]com </p>
-#### PhD Student, Queen Mary University of London & University of Genoa
+### PhD Student, Queen Mary University of London & University of Genoa
