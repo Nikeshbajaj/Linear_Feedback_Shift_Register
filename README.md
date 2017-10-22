@@ -1,6 +1,6 @@
 # LFSR -Linear Feedback Shift Register
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/LFSR1.jpg" width="300"/>
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/LFSR1.jpg" width="500"/>
 </p>
 
 # Python
