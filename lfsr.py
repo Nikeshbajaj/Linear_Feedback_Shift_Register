@@ -1,6 +1,9 @@
 import numpy as np
-
-
+'''
+Author @ Nikesh Bajaj
+Date: 22 Oct 2017
+Contact: n.bajaj@qmul.ac.uk
+'''
 class LFSR():
 	'''
 	Linear Feedback Shift Register
