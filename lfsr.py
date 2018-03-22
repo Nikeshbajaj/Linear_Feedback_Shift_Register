@@ -233,7 +233,7 @@ class LFSR():
 		print(' Count        : ',self.count)
 		print(' Output bit   : ',self.outbit)
 		print(' feedback bit : ',self.feedbackbit)
-		if self.count>0 and count<1000:
+		if self.count>0 and self.count<1000:
 			print(' Output Sequence %s'%(''.join([str(int(x)) for x in self.seq])))
 	
 	def check(self):
