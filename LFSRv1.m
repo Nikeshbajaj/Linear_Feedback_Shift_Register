@@ -16,6 +16,7 @@ function[seq c]=LFSRv1(s,t)
 % NIKESH BAJAJ 
 % http://nikeshbajaj.in
 % bajaj.nikkey@gmail.com
+% PhD Student, Queen Mary University of London & University of Genoa
 % Asst. Professor at Lovely Profesional University
 % Masters from Aligarh Muslim University,India
 %--------------------------------------------------
