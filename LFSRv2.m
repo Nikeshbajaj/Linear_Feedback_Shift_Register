@@ -1,4 +1,4 @@
-function[seq c]=LFSRnik2(s,t)
+function[seq c]=LFSRv2(s,t)
 %s=initial state of LFSR, you can choose any lenght of LFSR
 %Instruction:========== 
 %Save LFSR.m in your current directory and type following
@@ -6,7 +6,7 @@ function[seq c]=LFSRnik2(s,t)
 %--EXAMPLE-------------------
 %>>s=[1 1 0 0 1]  
 %>>t=[5 2]
-%>>[seq c] =LFSRnik2(s,t) 
+%>>[seq c] =LFSRv2(s,t) 
 %---------------------------
 %seq = generated sequence
 %c will be matrix containing the states of LFSR raw wise
