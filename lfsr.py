@@ -146,17 +146,18 @@ class LFSR():
 	>>> L.runKCycle(10)
 	array([ 1.,  1.,  1.,  0.,  0.,  1.,  1.,  0.,  1.,  0.])
 
-	>>> L.runFullCycle()
-	array([1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1,
+	>>> L.runFullCycle()  # doctest: +NORMALIZE_WHITESPACE
+	array([1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1,
 		1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0])
-	>>> L.info()
+	>>> L.info()  # doctest: +NORMALIZE_WHITESPACE
 	5 bit LFSR with feedback polynomial  x^5 + x^2 + 1
 	Expected Period (if polynomial is primitive) =  31
 	Current :
 		State        :  [0 0 1 0 0]
-		Count        :  43
+		Count        :  42
 		Output bit   :  0
 		feedback bit :  0
+	Output Sequence 111100110100100001010111011000111110011010
 	>>> tempseq = L.runKCycle(10000)  # generate 10000 bits from current state
 
 	## Example 2  ## 5 bit LFSR with custum state and feedback polynomial
