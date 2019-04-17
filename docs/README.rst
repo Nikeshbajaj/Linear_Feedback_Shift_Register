@@ -28,7 +28,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   python setup.py install
 
 
-**Example 1** ## 5 bit LFSR with x^5 + x^2 + 1
+**Example 1**: 5-bit LFSR with feedback polynomial *x^5 + x^2 + 1*
 ----------
 
 ::
@@ -54,7 +54,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   >>>L.runFullCycle()
   >>>L.info()
 
-**Example 2** ## 5 bit LFSR with custum state and feedback polynomial
+**Example 2**: 5-bit LFSR with custum state and feedback polynomial
 ----------
 
 ::
@@ -67,7 +67,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   >>>L.set(fpoly=[5,3])
 
 
-**Example 3**  ## 23 bit LFSR with custum state and feedback polynomial
+**Example 3**: 23 bit LFSR with custum state and feedback polynomial
 ----------
 
 ::
@@ -79,21 +79,22 @@ Download the repository or clone it with git, after cd in directory build it fro
   >>>seq = L.seq
   
 
-Changing feedback polynomial in between as in Article: **Enhancement of A5/1**
-
-**https://doi.org/10.1109/ETNCC.2011.5958486**
+**Changing feedback polynomial in between**
+----------
 
 ::
   
   >>>L.changeFpoly(newfpoly =[23,14],reset=False)
   >>>seq1 = L.runKCycle(20)
-
+  
+  # After 20 clocks
   >>>L.changeFpoly(newfpoly =[23,9],reset=False)
-  >>>seq1 = L.runKCycle(20)
+  >>>seq2 = L.runKCycle(20)
 
-
-**For A5/1 GSM Stream cipher generator (Hint)**
+**A5/1 GSM Stream cipher generator**
 ----------
+Reference Article: **Enhancement of A5/1** **https://doi.org/10.1109/ETNCC.2011.5958486**
+
 ::
   
   # Three LFSRs initialzed with 'ones' though they are intialized with encription key
