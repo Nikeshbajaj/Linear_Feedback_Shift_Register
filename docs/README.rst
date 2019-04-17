@@ -130,7 +130,7 @@ If any doubt, confusion or feedback please contact me
 
 Nikesh Bajaj: http://nikeshbajaj.in
 
-* `n.bajaj[AT]qmul.ac.uk`
+* `n.bajaj@qmul.ac.uk`
 * `nikkeshbajaj@gmail.com`
 
 PhD Student: **Queen Mary University of London** & **University of Genoa**
