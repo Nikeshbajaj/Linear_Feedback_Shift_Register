@@ -1,9 +1,8 @@
 LFSR -Linear Feedback Shift Register
 ======================================
 
-**
-  [View on Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)
-  [PyPi - project](https://pypi.org/project/pylfsr/)**
+[View on Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)
+[PyPi - project](https://pypi.org/project/pylfsr/)
 
 ----------
 
@@ -12,14 +11,15 @@ LFSR -Linear Feedback Shift Register
 
 **Requirement** : *numpy*
 
-**with pip:**
+**With pip:**
 
 ::
   
   pip install pylfsr
 
 
-from sourse
+**Build from source**
+
 Download the repository or clone it with git, after cd in directory build it from source with
 
 ::
@@ -74,7 +74,8 @@ Example 3  ## 23 bit LFSR with custum state and feedback polynomial
   >>>seq = L.seq
   
 
-Changing feedback polynomial in between as in [Enhancement of A5/1](https://doi.org/10.1109/ETNCC.2011.5958486)
+Changing feedback polynomial in between as in Article: Enhancement of A5/1
+'https://doi.org/10.1109/ETNCC.2011.5958486'
 
 ::
   
@@ -102,9 +103,13 @@ For A5/1 GSM Stream cipher generator (Hint)
 
 Contacts
 ----------
+
 If any doubt, confusion or feedback please contact me
+
 Nikesh Bajaj
 http://nikeshbajaj.in
-* n[dot]bajaj[AT]qmul[dot]ac[dot]uk </p>
-* bajaj[dot]nikkey[AT]gmail[dot]com </p>
+
+* `n[dot]bajaj[AT]qmul[dot]ac[dot]uk`
+* `bajaj[dot]nikkey[AT]gmail[dot]com`
+
 PhD Student, Queen Mary University of London & University of Genoa
