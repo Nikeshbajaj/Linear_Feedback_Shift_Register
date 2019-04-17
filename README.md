@@ -174,11 +174,12 @@ seq =LFSRv3(s,t,50)
 ______________________________________
 
 # Contacts:
--------
 
 If any doubt, confusion or feedback please contact me
 * **Nikesh Bajaj**
 * http://nikeshbajaj.in
 * n.bajaj@qmul.ac.uk
 * bajaj[dot]nikkey [AT]gmail[dot]com
-### PhD Student, Queen Mary University of London & University of Genoa
+### PhD Student: Queen Mary University of London & University of Genoa
+______________________________________
+
