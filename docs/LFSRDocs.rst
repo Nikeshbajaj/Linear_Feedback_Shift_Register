@@ -1,5 +1,6 @@
-class LFSR(fpoly=[5,2],initstate='ones',verbose=False)
-======================================================
+
+Class LFSR(fpoly=[5,2],initstate='ones',verbose=False)
+======================================
 
 Linear Feedback Shift Register
 
