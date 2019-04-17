@@ -23,9 +23,9 @@ This function will return all the states of LFSR and will check Three fundamenta
 Example:
 ::
   
-  >>s=[1 1 0 0 1] 
-  >>t=[5 2]
-  >>[seq c] =LFSRv1(s,t)
+  s=[1 1 0 0 1] 
+  t=[5 2]
+  [seq c] =LFSRv1(s,t)
 
 
 **LFSRv2**
@@ -34,10 +34,12 @@ This function will return only generated sequence will all the states of LFSR, n
 here. Use this function to avoid verification each time you execute the program.
 
 Example:
+
 ::
-  >>s=[1 1 0 0 1] 
-  >>t=[5 2]
-  >>[seq c] =LFSRv2(s,t)
+  
+  s=[1 1 0 0 1] 
+  t=[5 2]
+  [seq c] =LFSRv2(s,t)
 
 **LFSRv3 (faster)**
 ---------
@@ -47,9 +49,10 @@ this function generates N bit sequence only. This is faster then other two funct
 Exmple:
 
 ::
-  >>s=[1 1 0 0 1]  
-  >>t=[5 2]
-  >>seq =LFSRv3(s,t,50)
+  
+  s=[1 1 0 0 1]  
+  t=[5 2]
+  seq =LFSRv3(s,t,50)
 
 **Tips**
 
