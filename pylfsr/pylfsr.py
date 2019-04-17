@@ -3,8 +3,8 @@ import numpy as np
 Author @ Nikesh Bajaj
 Date: 22 Oct 2017
 Contact: n.bajaj@qmul.ac.uk
-'''
 
+'''
 
 class LFSR():
 	'''
@@ -138,7 +138,7 @@ class LFSR():
 	Examples
 	--------
 	>>> import numpy as np
-	>>> from lfsr import LFSR
+	>>> from pylfsr import LFSR
 
 	## Example 1  ## 5 bit LFSR with x^5 + x^2 + 1
 	>>> L = LFSR()
@@ -305,7 +305,9 @@ class LFSR():
 		return tempseq
 
 	def _loadFpolyList(self):
-		fname = 'lfsr/primitive_polynomials_GF2_dict.txt'
+		import os
+		fname = 'primitive_polynomials_GF2_dict.txt'
+		fname = os.path.join(os.path.dirname(__file__), fname)
 		try:
 			f = open(fname, "rb")
 			lines = f.readlines()
@@ -333,9 +335,6 @@ class LFSR():
 			return ifpoly
 		else:
 			print('Not a valid form of feedback polynomial')
-			return None
-			
-			
 if __name__ == '__main__':
 	import doctest
 	doctest.testmod()
