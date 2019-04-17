@@ -37,7 +37,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   
   >>>L = LFSR() 
   >>>L.info()
-  5 bit LFSR with feedback polynomial  x^5 + x^2 + 1
+  5 bit LFSR with feedback polynomial  :x^5 + x^2 + 1:
   Expected Period (if polynomial is primitive) =  31
   Current :
   State        :  [1 1 1 1 1]
@@ -77,6 +77,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   
 
 Changing feedback polynomial in between as in Article: **Enhancement of A5/1**
+
 **https://doi.org/10.1109/ETNCC.2011.5958486**
 
 ::
