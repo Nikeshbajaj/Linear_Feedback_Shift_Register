@@ -3,19 +3,18 @@ LFSR -Linear Feedback Shift Register
 
 **[View on Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)**
 **[PyPi - project](https://pypi.org/project/pylfsr/)**
+
 ----------
 
-Python
-Installation
+**Python**
+**Installation**
 
-Requirement : numpy
+**Requirement** : *numpy*
 
-with pip:
+**with pip:**
 
 ::
-
 pip install pylfsr
-
 ::
 
 from sourse
