@@ -1,5 +1,5 @@
 import numpy as np
-from lfsr import LFSR
+from pylfsr import LFSR
 ## Example 1  ## 5 bit LFSR with x^5 + x^2 + 1
 L = LFSR() 
 L.info()
