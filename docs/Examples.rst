@@ -43,8 +43,8 @@ Download the repository or clone it with git, after cd in directory build it fro
   Current :
   State        :  [1 1 1 1 1]
   Count        :  0
-  Output bit   :  -1
-  feedback bit :  -1
+  Output bit   : -1
+  feedback bit : -1
 
 
 ::
@@ -78,6 +78,17 @@ Download the repository or clone it with git, after cd in directory build it fro
   >>>L.info()
   >>>seq = L.seq
   
+**Example 4**: Get the feedback polynomial or list
+----------
+Reference : http://www.partow.net/programming/polynomials/index.html
+
+::
+  >>>L = LFSR()
+  # list of 5-bit feedback polynomials
+  >>>fpoly = L.get_fpolyList(m=5)
+  
+  # list of all feedback polynomials as a dictionary
+  >>>fpolyDict = L.get_fpolyList()
 
 **Changing feedback polynomial in between**
 ----------
