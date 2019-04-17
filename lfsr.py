@@ -333,6 +333,9 @@ class LFSR():
 			return ifpoly
 		else:
 			print('Not a valid form of feedback polynomial')
+			return None
+			
+			
 if __name__ == '__main__':
 	import doctest
 	doctest.testmod()
