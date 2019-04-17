@@ -1,7 +1,7 @@
 
 Class LFSR
 ======================================
-*class(fpoly=[5,2],initstate='ones',verbose=False)*
+*class(fpoly=[5,2], initstate='ones', verbose=False)*
 
 *help doc**
 
@@ -22,7 +22,7 @@ Class LFSR
 	http://www.ams.org/journals/mcom/1962-16-079/S0025-5718-1962-0148256-1/S0025-5718-1962-0148256-1.pdf
 	http://poincare.matf.bg.ac.rs/~ezivkovm/publications/primpol1.pdf
 
-* Verbose : boolean, optional (default=False)
+* verbose : boolean, optional (default=False)
 	if True, state of LFSR will be printed at every cycle(iteration)
 	
 ***Attributes***
