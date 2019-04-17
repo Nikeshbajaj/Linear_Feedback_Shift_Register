@@ -7,11 +7,11 @@ Folder : https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/tree/mast
 
 Description
 ---------
-Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
-This will also check Three fundamental Property of LFSR 
-* (1) Balance Property 
-* (2) Runlength Property 
-* (3) Autocorrelation Property
+Generate randon binary sequence using LFSR for any given feedback taps (polynomial), 
+This will also check three fundamental properties of LFSR:
+  1. Balance Property 
+  2. Runlength Property 
+  3. Autocorrelation Property
 
 This MATLAB Code work for any length of LFSR with given taps (feedback polynomial) -Universal, There are three files LFSRv1.m an LFSRv2.m, LFSRv3.m
 
