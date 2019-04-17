@@ -3,11 +3,11 @@ Class LFSR
 ======================================
 *class(fpoly=[5,2], initstate='ones', verbose=False)*
 
-*help doc**
+*help doc*
 
 **Linear Feedback Shift Register**
 
-***Parameters***
+**#Parameters** ------------------------------------
 
 * initstate : binary np.array (row vector) or str ='ones' or 'random', optional (default = 'ones')) Initial state of LFSR.		      default ='ones'
 	Initial state is intialized with ones and length of register is equal to degree of feedback polynomial
@@ -25,7 +25,7 @@ Class LFSR
 * verbose : boolean, optional (default=False)
 	if True, state of LFSR will be printed at every cycle(iteration)
 	
-***Attributes***
+**#Attributes** ------------------------------------
 
 * count : int
 	Count the cycle
@@ -48,10 +48,10 @@ Class LFSR
 	Expected period of sequence
 	if feedback polynomial is primitive and irreducible (as per reference), period will be 2^M -1
 
-*feedpoly : str
+* feedpoly : str
 	feedback polynomial
 	
-***Methods***
+**#Methods** ------------------------------------
 
 * next()
 	run one cycle on LFSR with given feedback polynomial and
