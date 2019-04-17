@@ -119,4 +119,4 @@ http://nikeshbajaj.in
 * `n[dot]bajaj[AT]qmul[dot]ac[dot]uk`
 * `bajaj[dot]nikkey[AT]gmail[dot]com`
 
-PhD Student, Queen Mary University of London & University of Genoa
+PhD Student: **Queen Mary University of London** & **University of Genoa**
