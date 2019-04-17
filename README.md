@@ -172,9 +172,13 @@ seq =LFSRv3(s,t,50)
 * If you want to make it fast for long length of LFSR,use LFSRv3.m 
 
 ______________________________________
+
+# Contacts:
+-------
+
 If any doubt, confusion or feedback please contact me
-### Nikesh Bajaj
-### http://nikeshbajaj.in
-<p> n.bajaj@qmul.ac.uk </p>
-<p> bajaj[dot]nikkey [AT]gmail[dot]com </p>
+* **Nikesh Bajaj**
+* http://nikeshbajaj.in
+* n.bajaj@qmul.ac.uk
+* bajaj[dot]nikkey [AT]gmail[dot]com
 ### PhD Student, Queen Mary University of London & University of Genoa
