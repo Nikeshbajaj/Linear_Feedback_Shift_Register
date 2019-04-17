@@ -29,6 +29,7 @@ Download the repository or clone it with git, after cd in directory build it fro
 
 
 **Example 1** ## 5 bit LFSR with x^5 + x^2 + 1
+----------
 
 ::
   
@@ -54,6 +55,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   >>>L.info()
 
 **Example 2** ## 5 bit LFSR with custum state and feedback polynomial
+----------
 
 ::
   
@@ -66,6 +68,7 @@ Download the repository or clone it with git, after cd in directory build it fro
 
 
 **Example 3**  ## 23 bit LFSR with custum state and feedback polynomial
+----------
 
 ::
   
@@ -90,7 +93,7 @@ Changing feedback polynomial in between as in Article: **Enhancement of A5/1**
 
 
 **For A5/1 GSM Stream cipher generator (Hint)**
-
+----------
 ::
   
   # Three LFSRs initialzed with 'ones' though they are intialized with encription key
