@@ -7,10 +7,9 @@ LFSR - Examples
 
 ----------
 
-**Python**
-**Installation**
-
 **Requirement** : *numpy*
+
+**Installation**
 
 **With pip:**
 
