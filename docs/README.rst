@@ -1,9 +1,9 @@
-LFSR -Linear Feedback Shift Register
+LFSR - Examples
 ======================================
 
-* [View on Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)
+* **Github Page**: http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/
 
-* [PyPi - project](https://pypi.org/project/pylfsr/)
+* **PyPi - project**: https://pypi.org/project/pylfsr/
 
 ----------
 
@@ -33,11 +33,15 @@ Download the repository or clone it with git, after cd in directory build it fro
 
 ::
   
-  >>>import numpy as np
-  >>>from pylfsr import LFSR
+  # import LFSR
+  import numpy as np
+  from pylfsr import LFSR
   
-  >>>L = LFSR() 
-  >>>L.info()
+  L = LFSR()
+  
+  # print the info
+  L.info()
+  
   5 bit LFSR with feedback polynomial  x^5 + x^2 + 1
   Expected Period (if polynomial is primitive) =  31
   Current :
@@ -49,22 +53,22 @@ Download the repository or clone it with git, after cd in directory build it fro
 
 ::
   
-  >>>L.next()
-  >>>L.runKCycle(10)
-  >>>L.runFullCycle()
-  >>>L.info()
+  L.next()
+  L.runKCycle(10)
+  L.runFullCycle()
+  L.info()
 
 **Example 2**: 5-bit LFSR with custum state and feedback polynomial
 ----------
 
 ::
   
-  >>>state = [0,0,0,1,0]
-  >>>fpoly = [5,4,3,2]
-  >>>L = LFSR(fpoly=fpoly,initstate =state, verbose=True)
-  >>>L.info()
-  >>>tempseq = L.runKCycle(10)
-  >>>L.set(fpoly=[5,3])
+  state = [0,0,0,1,0]
+  fpoly = [5,4,3,2]
+  L = LFSR(fpoly=fpoly,initstate =state, verbose=True)
+  L.info()
+  tempseq = L.runKCycle(10)
+  L.set(fpoly=[5,3])
 
 
 **Example 3**: 23-bit LFSR with custum state and feedback polynomial
@@ -72,11 +76,11 @@ Download the repository or clone it with git, after cd in directory build it fro
 
 ::
   
-  >>>L = LFSR(fpoly=[23,18],initstate ='random',verbose=True)
-  >>>L.info()
-  >>>L.runKCycle(10)
-  >>>L.info()
-  >>>seq = L.seq
+  L = LFSR(fpoly=[23,18],initstate ='random',verbose=True)
+  L.info()
+  L.runKCycle(10)
+  L.info()
+  seq = L.seq
   
 **Example 4**: Get the feedback polynomial or list
 ----------
@@ -84,28 +88,28 @@ Reference : http://www.partow.net/programming/polynomials/index.html
 
 ::
   
-  >>>L = LFSR()
+  L = LFSR()
   # list of 5-bit feedback polynomials
-  >>>fpoly = L.get_fpolyList(m=5)
+  fpoly = L.get_fpolyList(m=5)
   
   # list of all feedback polynomials as a dictionary
-  >>>fpolyDict = L.get_fpolyList()
+  fpolyDict = L.get_fpolyList()
 
 **Changing feedback polynomial in between**
 ----------
 
 ::
   
-  >>>L.changeFpoly(newfpoly =[23,14],reset=False)
-  >>>seq1 = L.runKCycle(20)
+  L.changeFpoly(newfpoly =[23,14],reset=False)
+  seq1 = L.runKCycle(20)
   
-  # After 20 clocks
-  >>>L.changeFpoly(newfpoly =[23,9],reset=False)
-  >>>seq2 = L.runKCycle(20)
+  # Change after 20 clocks
+  L.changeFpoly(newfpoly =[23,9],reset=False)
+  seq2 = L.runKCycle(20)
 
 **A5/1 GSM Stream cipher generator**
 ----------
-Reference Article: **Enhancement of A5/1** **https://doi.org/10.1109/ETNCC.2011.5958486**
+Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5958486
 
 ::
   
@@ -125,10 +129,9 @@ Contacts
 
 If any doubt, confusion or feedback please contact me
 
-Nikesh Bajaj
-http://nikeshbajaj.in
+Nikesh Bajaj: http://nikeshbajaj.in
 
-* `n[dot]bajaj[AT]qmul[dot]ac[dot]uk`
-* `bajaj[dot]nikkey[AT]gmail[dot]com`
+* `n.bajaj[AT]qmul.ac.uk`
+* `nikkeshbajaj@gmail.com`
 
 PhD Student: **Queen Mary University of London** & **University of Genoa**
