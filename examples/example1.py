@@ -10,7 +10,7 @@ L.info()
 tempseq = L.runKCycle(10000)    # generate 10000 bits from current state
 
 ## Example 2  ## 5 bit LFSR with custum state and feedback polynomial
-state = [0,0,0,1,0]
+state = np.array([0,0,0,1,0])
 fpoly = [5,4,3,2]
 L = LFSR(fpoly=fpoly,initstate =state, verbose=True)
 L.info()
