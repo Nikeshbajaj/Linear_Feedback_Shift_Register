@@ -1,19 +1,38 @@
 # LFSR -Linear Feedback Shift Register
 
 ### **[View on Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)**
+### **[PyPi](https://pypi.org/project/pylfsr/)**
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="500"/>
 </p>
 
+
 # Python
+# Installation
 
 Requirement : numpy
+
+## with pip
+
+```
+pip install pylfsr
+
+```
+
+## from sourse
+Download the repository or clone it with git, after cd in directory build it from source with
+
+```
+python setup.py install
+
+```
+
 
 ### Example  ## 5 bit LFSR with x^5 + x^2 + 1
 ```
 >>>import numpy as np
->>>from lfsr import LFSR
+>>>from pylfsr import LFSR
 >>>L = LFSR() 
 >>>L.info()
   5 bit LFSR with feedback polynomial  x^5 + x^2 + 1
