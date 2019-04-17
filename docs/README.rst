@@ -67,7 +67,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   >>>L.set(fpoly=[5,3])
 
 
-**Example 3**: 23 bit LFSR with custum state and feedback polynomial
+**Example 3**: 23-bit LFSR with custum state and feedback polynomial
 ----------
 
 ::
