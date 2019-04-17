@@ -24,9 +24,10 @@ class LFSR():
 			degree of feedback polynomial
 
 	fpoly : List, optional (default=[5,2])
-		Feedback polynomial, it has to be primitive polynomial for valide output of LFSR
-
-		Ref list of some primitive polynomial over GF(2)can be seen at
+		Feedback polynomial, it has to be primitive polynomial of GF(2) field, for valid output of LFSR
+		to get the list of feedback polynomials check method 'get_fpolyList'
+		or check Refeferece:
+		Ref: List of some primitive polynomial over GF(2)can be found at
 		http://www.partow.net/programming/polynomials/index.html
 		http://www.ams.org/journals/mcom/1962-16-079/S0025-5718-1962-0148256-1/S0025-5718-1962-0148256-1.pdf
 		http://poincare.matf.bg.ac.rs/~ezivkovm/publications/primpol1.pdf
@@ -123,6 +124,15 @@ class LFSR():
 	info()
 		display the information about LFSR with current state of variables
 
+	get_fpolyList(m=None)
+		Get the list of primitive polynomials as feedback polynomials
+		for m-bit LFSR
+		if m is None, list of feedback polynomials for 1 < m < 32 is return as a dictionary
+
+	get_Ifpoly(fpoly)
+		Get the image of primitive polynomial fpoly, which is also a valid
+		primitive polynomial
+
 
 
 	Examples
@@ -202,8 +212,9 @@ class LFSR():
 			elif initstate == 'random':
 				initstate = np.random.randint(0, 2, np.max(fpoly))
 			else:
-				#raise ValueError('A very specific bad thing happened')
 				raise Exception('Unknown intial state')
+		if isinstance(initstate, list):
+			initstate = np.array(initstate)
 
 		self.initstate = initstate
 		self.fpoly = fpoly
@@ -223,8 +234,6 @@ class LFSR():
 		self.feedpoly = feed
 
 		self.check()
-
-		#assert(y.shape == yp.shape
 
 	def info(self):
 		print('%d bit LFSR with feedback polynomial %s' % (self.M, self.feedpoly))
@@ -295,7 +304,35 @@ class LFSR():
 
 		return tempseq
 
+	def _loadFpolyList(self):
+		fname = 'lfsr/primitive_polynomials_GF2_dict.txt'
+		try:
+			f = open(fname, "rb")
+			lines = f.readlines()
+			f.close()
+			self.fpolyList = eval(lines[0].decode())
+		except:
+			raise Exception("File named:'{}' Not Found!!! \n try again, after downloading file from github save it in lfsr directory".format(fname))
 
+	def get_fpolyList(self,m=None):
+		self._loadFpolyList()
+		if m is None:
+			return self.fpolyList
+		elif type(m)== int and m > 2 and m < 32:
+			return self.fpolyList[m]
+		else:
+			print('Wrong input m. m should be int 1 < m < 32 or None')
+
+	def get_Ifpoly(self,fpoly):
+		''' Get image of feebback polynomial'''
+		if isinstance(fpoly, list) or (isinstance(fpoly, numpy.ndarray) and len(fpoly.shape)==1):
+			fpoly = list(fpoly)
+			fpoly.sort(reverse=True)
+			ifpoly = [fpoly[0]] +[fpoly[0]-ff for ff in fpoly[1:]]
+			ifpoly.sort(reverse=True)
+			return ifpoly
+		else:
+			print('Not a valid form of feedback polynomial')
 if __name__ == '__main__':
 	import doctest
 	doctest.testmod()
