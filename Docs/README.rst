@@ -28,7 +28,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   python setup.py install
 
 
-**Example 1** ## 5 bit LFSR with x^5 + x^2 + 1
+**Example 1** ## 5 bit LFSR with :x^5 + x^2 + 1:
 
 ::
   
