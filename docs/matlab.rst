@@ -5,7 +5,7 @@ MATLAB CODE
 Folder : https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/tree/master/matlabfiles
 
 
-# Description
+Description
 ---------
 Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
 This will also check Three fundamental Property of LFSR 
@@ -51,6 +51,7 @@ Exmple:
   >>t=[5 2]
   >>seq =LFSRv3(s,t,50)
 
-Tips
+**Tips**
+
 * If you want to use this function in middle of any program, use LFSRv2 or LFSRv1 with verification =0. 
 * If you want to make it fast for long length of LFSR,use LFSRv3.m 
