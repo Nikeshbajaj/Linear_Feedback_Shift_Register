@@ -2,6 +2,7 @@ LFSR -Linear Feedback Shift Register
 ======================================
 
 [View on Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)
+
 [PyPi - project](https://pypi.org/project/pylfsr/)
 
 ----------
@@ -27,12 +28,13 @@ Download the repository or clone it with git, after cd in directory build it fro
   python setup.py install
 
 
-Example  ## 5 bit LFSR with x^5 + x^2 + 1
+**Example 1** ## 5 bit LFSR with x^5 + x^2 + 1
 
 ::
   
   >>>import numpy as np
   >>>from pylfsr import LFSR
+  
   >>>L = LFSR() 
   >>>L.info()
   5 bit LFSR with feedback polynomial  x^5 + x^2 + 1
@@ -51,7 +53,7 @@ Example  ## 5 bit LFSR with x^5 + x^2 + 1
   >>>L.runFullCycle()
   >>>L.info()
 
-Example  ## 5 bit LFSR with custum state and feedback polynomial
+**Example 2** ## 5 bit LFSR with custum state and feedback polynomial
 
 ::
   
@@ -63,7 +65,7 @@ Example  ## 5 bit LFSR with custum state and feedback polynomial
   >>>L.set(fpoly=[5,3])
 
 
-Example 3  ## 23 bit LFSR with custum state and feedback polynomial
+**Example 3**  ## 23 bit LFSR with custum state and feedback polynomial
 
 ::
   
@@ -74,8 +76,8 @@ Example 3  ## 23 bit LFSR with custum state and feedback polynomial
   >>>seq = L.seq
   
 
-Changing feedback polynomial in between as in Article: Enhancement of A5/1
-'https://doi.org/10.1109/ETNCC.2011.5958486'
+Changing feedback polynomial in between as in Article: **Enhancement of A5/1**
+**https://doi.org/10.1109/ETNCC.2011.5958486**
 
 ::
   
@@ -86,7 +88,7 @@ Changing feedback polynomial in between as in Article: Enhancement of A5/1
   >>>seq1 = L.runKCycle(20)
 
 
-For A5/1 GSM Stream cipher generator (Hint)
+**For A5/1 GSM Stream cipher generator (Hint)**
 
 ::
   
