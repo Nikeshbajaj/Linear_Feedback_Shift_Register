@@ -28,7 +28,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   python setup.py install
 
 
-**Example 1** ## 5 bit LFSR with :x^5 + x^2 + 1:
+**Example 1** ## 5 bit LFSR with x^5 + x^2 + 1
 
 ::
   
@@ -37,7 +37,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   
   >>>L = LFSR() 
   >>>L.info()
-  5 bit LFSR with feedback polynomial  :x^5 + x^2 + 1:
+  5 bit LFSR with feedback polynomial  x^5 + x^2 + 1
   Expected Period (if polynomial is primitive) =  31
   Current :
   State        :  [1 1 1 1 1]
