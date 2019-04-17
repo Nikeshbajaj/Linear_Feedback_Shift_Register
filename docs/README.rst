@@ -83,6 +83,7 @@ Download the repository or clone it with git, after cd in directory build it fro
 Reference : http://www.partow.net/programming/polynomials/index.html
 
 ::
+  
   >>>L = LFSR()
   # list of 5-bit feedback polynomials
   >>>fpoly = L.get_fpolyList(m=5)
