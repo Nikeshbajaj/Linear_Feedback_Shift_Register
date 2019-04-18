@@ -6,9 +6,3 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
-  build:
-    docker:
-      - image: circleci/python:3.6
-    steps:
-      - checkout
-      - run: echo "A first hello"      
