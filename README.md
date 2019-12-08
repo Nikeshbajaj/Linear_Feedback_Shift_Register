@@ -1,5 +1,22 @@
 # LFSR -Linear Feedback Shift Register
 [![Documentation Status](https://readthedocs.org/projects/linear-feedback-shift-register/badge/?version=latest)](https://linear-feedback-shift-register.readthedocs.io/en/latest/?badge=latest)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![DOI](https://zenodo.org/badge/31331840.svg)](https://zenodo.org/badge/latestdoi/31331840)
+[![PyPI version fury.io](https://badge.fury.io/py/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![GitHub release](https://img.shields.io/github/release/nikeshbajaj/Linear_Feedback_Shift_Register.svg)](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/releases/)
+[![PyPI format](https://img.shields.io/pypi/format/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![HitCount](http://hits.dwyl.io/nikeshbajaj/Linear_Feedback_Shift_Register.svg)](http://hits.dwyl.io/nikeshbajaj/Linear_Feedback_Shift_Register)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/nikeshbajaj/Linear_Feedback_Shift_Register.svg)](http://isitmaintained.com/project/nikeshbajaj/Linear_Feedback_Shift_Register "Percentage of issues still open")
+[![PyPI download month](https://img.shields.io/pypi/dm/pylfsr.svg)](https://pypi.org/project/pylfsr/)
+[![PyPI download week](https://img.shields.io/pypi/dw/pylfsr.svg)](https://pypi.org/project/pylfsr/)
+
+
+[![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://shields.io/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
+
+
+
+
 ### **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)**
 ### **[PyPi - project](https://pypi.org/project/pylfsr/)**
 ### **[Documentation](https://linear-feedback-shift-register.readthedocs.io/en/latest/index.html)** 
