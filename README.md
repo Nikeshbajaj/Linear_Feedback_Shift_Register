@@ -15,7 +15,9 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
 
 
-
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pylfsr?style=social)
+![GitHub stars](https://img.shields.io/github/stars/nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
+![GitHub forks](https://img.shields.io/github/forks/nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
 
 ### **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)**
 ### **[PyPi - project](https://pypi.org/project/pylfsr/)**
