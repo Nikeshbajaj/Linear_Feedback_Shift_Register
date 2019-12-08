@@ -11,7 +11,7 @@
 [![PyPI download week](https://img.shields.io/pypi/dw/pylfsr.svg)](https://pypi.org/project/pylfsr/)
 
 
-[![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://pypi.org/project/pylfsr/)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
 
 
