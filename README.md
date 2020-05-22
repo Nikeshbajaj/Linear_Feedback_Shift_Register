@@ -1,6 +1,6 @@
 # LFSR -Linear Feedback Shift Register
 
-**[Documentation](https://lfsr.readthedocs.io/)**
+### **[Documentation](https://lfsr.readthedocs.io/)**
 
 [![Documentation Status](https://readthedocs.org/projects/linear-feedback-shift-register/badge/?version=latest)](https://linear-feedback-shift-register.readthedocs.io/en/latest/?badge=latest)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![DOI](https://zenodo.org/badge/31331840.svg)](https://zenodo.org/badge/latestdoi/31331840)
 [![PyPI version fury.io](https://badge.fury.io/py/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
