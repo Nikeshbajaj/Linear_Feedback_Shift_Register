@@ -82,7 +82,7 @@ L.runFullCycle()
 L.info()
 ```
 
-### Example 2**: 5-bit LFSR with custom state and feedback polynomial
+### **Example 2**: 5-bit LFSR with custom state and feedback polynomial
 
 ```
 state = [0,0,0,1,0]
@@ -93,7 +93,7 @@ tempseq = L.runKCycle(10)
 L.set(fpoly=[5,3])
 ```
 
-### Example 3**: 23-bit LFSR with custom state and feedback polynomial
+### **Example 3**: 23-bit LFSR with custom state and feedback polynomial
 
 ```
 L = LFSR(fpoly=[23,18],initstate ='random',verbose=True)
@@ -103,7 +103,7 @@ L.info()
 seq = L.seq
 ```
 
-### Example 4**: Get the feedback polynomial or list
+### **Example 4**: Get the feedback polynomial or list
 Reference : http://www.partow.net/programming/polynomials/index.html
 
 ```
