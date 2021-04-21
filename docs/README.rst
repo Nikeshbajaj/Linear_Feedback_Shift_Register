@@ -2,9 +2,8 @@ LFSR - Examples
 ======================================
 
 * **Github Page**: http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/
-
 * **PyPi - project**: https://pypi.org/project/pylfsr/
-
+* **Documentation**: https://lfsr.readthedocs.io/en/latest/
 ----------
 
 **Requirement** : *numpy*
