@@ -2,7 +2,7 @@
 
 ### **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)**
 ### **[PyPi - project](https://pypi.org/project/pylfsr/)**
-### **[Documentation](https://linear-feedback-shift-register.readthedocs.io/en/latest/index.html)**
+### **[Documentation](https://lfsr.readthedocs.io/en/latest/)**
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="500"/>
