@@ -94,7 +94,7 @@ print('Output: ',L.seq)
 Output :
 
 ```	
-count 	    state 		outbit 	 seq
+count 	        state 		outbit 	 seq
 --------------------------------------------------
 0		[1 1 1]		-1	[-1]
 1		[0 1 1]		1	[1]
@@ -131,7 +131,7 @@ print('Output: ',L.seq)
 
 Output
 ```
-count 	 state 		outbit 	 seq
+count 	 	state 		outbit 	 seq
 --------------------------------------------------
 0		[1 1 1]		-1	[-1]
 1		[0 1 1]		1	[1]
@@ -168,27 +168,30 @@ Current :
  Output bit   :  -1
  feedback bit :  -1
 ```
-```seq = L1.runKCycle(100)```
+```
+seq = L1.runKCycle(100)
+```
+
 ```seq
-	array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-       1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-       1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
-       1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0,
-       1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1])
+array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0,
+1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1])
 ```
 ##  Example 6 ## testing the properties
 ```
 state = [1,1,1,1,0]
 fpoly = [5,3]
 L = LFSR(initstate=state,fpoly=fpoly)
-result  = L.test_properties(verbose=1)
+result  = L.test_properties(verbose=2)
 ```
 Output
 ```
 1. Periodicity
 ------------------
-	 - Expected period = 2^M-1 = 31
-	 - Pass?:  True
+ - Expected period = 2^M-1 = 31
+ - Pass?:  True
 
 2. Balance Property
 -------------------
@@ -210,66 +213,66 @@ Output
 Passed all the tests
 ==================
 ```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/acorr_test.jpg" width="500"/>
+</p>
 
-	>>> p = L.getFullPeriod()
-	>>> p
-	array([0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0,
+Testing individual property
+```
+# get a full period sequence
+p = L.getFullPeriod()
+p
+array([0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0,
        0, 1, 0, 0, 1, 0, 1, 1, 0])
-
-	>>> L.balance_property(p.copy())
-	(True, (16, 15))
-
-	>>> L.runlength_property(p.copy())
-	(True, array([8, 4, 2, 1, 1]))
-
-	>>> L.autocorr_property(p.copy())[0]
-	True
-
-	##  Example 7 ## testing the properties for non-primitive polynomial
-	>>> state = [1,1,1,1,0]
-	>>> fpoly = [5,1]
-	>>> L = LFSR(initstate=state,fpoly=fpoly)
-	>>> result = L.test_properties(verbose=1)
-	1. Periodicity
-	------------------
-	 - Expected period = 2^M-1 = 31
-	 - Pass?:  False
-
-	2. Balance Property
-	-------------------
-	 - Number of 1s = Number of 0s+1 (in a period): (N1s,N0s) =  (17, 14)
-	 - Pass?:  False
-
-	3. Runlength Property
-	-------------------
-	 - Number of Runs in a period should be of specific order, e.g. [4,2,1,1]
-	 - Runs:  [10  2  1  1  2]
-	 - Pass?:  False
-
-	4. Autocorrelation Property
-	-------------------
-	 - Autocorrelation of a period should be noise-like, specifically, 1 at k=0, -1/m everywhere else
-	 - Pass?:  False
-
-	==================
-	Failed one or more tests, check if feedback polynomial is primitive polynomial
-	==================
-
-
-
-
-
-### Example 3**: 23-bit LFSR with custum state and feedback polynomial
-
-```
-L = LFSR(fpoly=[23,18],initstate ='random',verbose=True)
-L.info()
-L.runKCycle(10)
-L.info()
-seq = L.seq
 ```
 
-### Example 4**: Get the feedback polynomial or list
+```
+L.balance_property(p.copy())
+# (True, (16, 15))
+
+L.runlength_property(p.copy())
+# (True, array([8, 4, 2, 1, 1]))
+
+L.autocorr_property(p.copy())[0]
+#True
+```
+
+##  Example 7 ## testing the properties for non-primitive polynomial
+```
+state = [1,1,1,1,0]
+fpoly = [5,1]
+L = LFSR(initstate=state,fpoly=fpoly)
+result = L.test_properties(verbose=1)
+```
+Output
+```
+1. Periodicity
+------------------
+ - Expected period = 2^M-1 = 31
+ - Pass?:  False
+
+2. Balance Property
+-------------------
+ - Number of 1s = Number of 0s+1 (in a period): (N1s,N0s) =  (17, 14)
+ - Pass?:  False
+
+3. Runlength Property
+-------------------
+ - Number of Runs in a period should be of specific order, e.g. [4,2,1,1]
+ - Runs:  [10  2  1  1  2]
+ - Pass?:  False
+
+4. Autocorrelation Property
+-------------------
+ - Autocorrelation of a period should be noise-like, specifically, 1 at k=0, -1/m everywhere else
+ - Pass?:  False
+
+==================
+Failed one or more tests, check if feedback polynomial is primitive polynomial
+==================
+```
+
+### Example 8**: Get the feedback polynomial or list
 Reference : http://www.partow.net/programming/polynomials/index.html
 
 ```
@@ -310,7 +313,7 @@ b3 = R1.state[10]
 _______________________________________________________________________________________________
 
 # MATLAB
-
+## For matlab files download it from here
 Folder : https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/tree/master/matlabfiles
 
 **Description**
