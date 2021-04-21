@@ -14,6 +14,13 @@
 
 ### Requirement : *numpy*
 
+### Updates: 
+  - Fixed the bugs (1) missing initial bit (2) exception
+  - **Added test properties of LFSR**
+  -   **(1) Balance Property**
+  -   **(2) Runlength Property**
+  -   **(3) Autocorrelation Property** 
+
 ## Installation
 
 ### with pip
@@ -21,6 +28,7 @@
 ```
 pip install pylfsr
 ```
+
 
 ### Build from the source
 Download the repository or clone it with git, after cd in directory build it from source with
@@ -69,6 +77,187 @@ L.info()
 tempseq = L.runKCycle(10)
 L.set(fpoly=[5,3])
 ```
+
+### Example 3 ## To visualize the process with 3-bit LFSR, with default counter_start_zero = True
+```
+state = [1,1,1]
+fpoly = [3,2]
+L = LFSR(initstate=state,fpoly=fpoly)
+print('count \t state \t\toutbit \t seq')
+print('-'*50)
+for _ in range(15):
+    print(L.count,L.state,'',L.outbit,L.seq,sep='\t')
+    L.next()
+print('-'*50)
+print('Output: ',L.seq)
+```
+Output :
+
+```	
+count 	    state 		outbit 	 seq
+--------------------------------------------------
+0		[1 1 1]		-1	[-1]
+1		[0 1 1]		1	[1]
+2		[0 0 1]		1	[1 1]
+3		[1 0 0]		1	[1 1 1]
+4		[0 1 0]		0	[1 1 1 0]
+5		[1 0 1]		0	[1 1 1 0 0]
+6		[1 1 0]		1	[1 1 1 0 0 1]
+7		[1 1 1]		0	[1 1 1 0 0 1 0]
+8		[0 1 1]		1	[1 1 1 0 0 1 0 1]
+9		[0 0 1]		1	[1 1 1 0 0 1 0 1 1]
+10		[1 0 0]		1	[1 1 1 0 0 1 0 1 1 1]
+11		[0 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0]
+12		[1 0 1]		0	[1 1 1 0 0 1 0 1 1 1 0 0]
+13		[1 1 0]		1	[1 1 1 0 0 1 0 1 1 1 0 0 1]
+14		[1 1 1]		0	[1 1 1 0 0 1 0 1 1 1 0 0 1 0]
+--------------------------------------------------
+Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
+```
+
+### Example 4 ## To visualize the process with 3-bit LFSR, with default counter_start_zero = False
+```
+state = [1,1,1]
+fpoly = [3,2]
+L = LFSR(initstate=state,fpoly=fpoly,counter_start_zero=False)
+print('count \t state \t\toutbit \t seq')
+print('-'*50)
+for _ in range(15):
+    print(L.count,L.state,'',L.outbit,L.seq,sep='\t')
+    L.next()
+print('-'*50)
+print('Output: ',L.seq)
+```
+
+Output
+```
+count 	 state 		outbit 	 seq
+--------------------------------------------------
+0		[1 1 1]		-1	[-1]
+1		[0 1 1]		1	[1]
+2		[0 0 1]		1	[1 1]
+3		[1 0 0]		1	[1 1 1]
+4		[0 1 0]		0	[1 1 1 0]
+5		[1 0 1]		0	[1 1 1 0 0]
+6		[1 1 0]		1	[1 1 1 0 0 1]
+7		[1 1 1]		0	[1 1 1 0 0 1 0]
+8		[0 1 1]		1	[1 1 1 0 0 1 0 1]
+9		[0 0 1]		1	[1 1 1 0 0 1 0 1 1]
+10		[1 0 0]		1	[1 1 1 0 0 1 0 1 1 1]
+11		[0 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0]
+12		[1 0 1]		0	[1 1 1 0 0 1 0 1 1 1 0 0]
+13		[1 1 0]		1	[1 1 1 0 0 1 0 1 1 1 0 0 1]
+14		[1 1 1]		0	[1 1 1 0 0 1 0 1 1 1 0 0 1 0]
+--------------------------------------------------
+Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
+```
+
+## Example 5  ## 23 bit LFSR with custum state and feedback polynomial
+```
+fpoly = [23,19]
+L1 = LFSR(fpoly=fpoly,initstate ='ones', verbose=False)
+L1.info()
+```
+Output
+```
+23 bit LFSR with feedback polynomial  x^23 + x^19 + 1
+Expected Period (if polynomial is primitive) =  8388607
+Current :
+ State        :  [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
+ Count        :  0
+ Output bit   :  -1
+ feedback bit :  -1
+```
+```seq = L1.runKCycle(100)```
+```seq
+	array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
+       1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0,
+       1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1])
+```
+##  Example 6 ## testing the properties
+```
+state = [1,1,1,1,0]
+fpoly = [5,3]
+L = LFSR(initstate=state,fpoly=fpoly)
+result  = L.test_properties(verbose=1)
+```
+Output
+```
+1. Periodicity
+------------------
+	 - Expected period = 2^M-1 = 31
+	 - Pass?:  True
+
+2. Balance Property
+-------------------
+ - Number of 1s = Number of 0s+1 (in a period): (N1s,N0s) =  (16, 15)
+ - Pass?:  True
+
+3. Runlength Property
+-------------------
+ - Number of Runs in a period should be of specific order, e.g. [4,2,1,1]
+ - Runs:  [8 4 2 1 1]
+ - Pass?:  True
+
+4. Autocorrelation Property
+-------------------
+ - Autocorrelation of a period should be noise-like, specifically, 1 at k=0, -1/m everywhere else
+ - Pass?:  True
+
+==================
+Passed all the tests
+==================
+```
+
+	>>> p = L.getFullPeriod()
+	>>> p
+	array([0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0,
+       0, 1, 0, 0, 1, 0, 1, 1, 0])
+
+	>>> L.balance_property(p.copy())
+	(True, (16, 15))
+
+	>>> L.runlength_property(p.copy())
+	(True, array([8, 4, 2, 1, 1]))
+
+	>>> L.autocorr_property(p.copy())[0]
+	True
+
+	##  Example 7 ## testing the properties for non-primitive polynomial
+	>>> state = [1,1,1,1,0]
+	>>> fpoly = [5,1]
+	>>> L = LFSR(initstate=state,fpoly=fpoly)
+	>>> result = L.test_properties(verbose=1)
+	1. Periodicity
+	------------------
+	 - Expected period = 2^M-1 = 31
+	 - Pass?:  False
+
+	2. Balance Property
+	-------------------
+	 - Number of 1s = Number of 0s+1 (in a period): (N1s,N0s) =  (17, 14)
+	 - Pass?:  False
+
+	3. Runlength Property
+	-------------------
+	 - Number of Runs in a period should be of specific order, e.g. [4,2,1,1]
+	 - Runs:  [10  2  1  1  2]
+	 - Pass?:  False
+
+	4. Autocorrelation Property
+	-------------------
+	 - Autocorrelation of a period should be noise-like, specifically, 1 at k=0, -1/m everywhere else
+	 - Pass?:  False
+
+	==================
+	Failed one or more tests, check if feedback polynomial is primitive polynomial
+	==================
+
+
+
+
 
 ### Example 3**: 23-bit LFSR with custum state and feedback polynomial
 
