@@ -13,6 +13,5 @@ recursive-include *.ipynb
 
 ### Exclude
 
-recursive-exclude matlabfiles *.m
 recursive-exclude * __pycache__
 recursive-exclude *.yml

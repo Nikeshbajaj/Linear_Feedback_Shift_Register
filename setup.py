@@ -24,8 +24,24 @@ setuptools.setup(
     keywords = 'lfsr linear-feedback-shift-register random generator gf(2)',
     classifiers=[
         "Programming Language :: Python :: 3",
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Natural Language :: English',
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Intended Audience :: Science/Research',
+        'Intended Audience :: Information Technology',
+        'Intended Audience :: Education',
+        'Intended Audience :: Telecommunications Industry',
+        'Topic :: Security :: Cryptography',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Games/Entertainment :: Puzzle Games',
+        'Topic :: Communications',
+
+
     ],
     include_package_data=True,
     install_requires=['numpy']

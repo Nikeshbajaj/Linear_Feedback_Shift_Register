@@ -1,0 +1,17 @@
+LICENSE
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+examples/example1.py
+examples/example_LFSR1.py
+examples/example_LFSR2.py
+pylfsr/__init__.py
+pylfsr/primitive_polynomials_GF2_dict.txt
+pylfsr/pylfsr.py
+pylfsr.egg-info/PKG-INFO
+pylfsr.egg-info/SOURCES.txt
+pylfsr.egg-info/dependency_links.txt
+pylfsr.egg-info/requires.txt
+pylfsr.egg-info/top_level.txt
