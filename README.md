@@ -47,6 +47,7 @@
 - [**A5/1 GSM Stream Cipher**](#a51-gsm-stream-cipher-generator)
 - [**Geffe Genegerator**](#geffe-generator)
 - [**Matlab Implementation**](#matlab)
+- [**Cite As**](#cite-as)
 -----
 
 ## New Updates
@@ -495,6 +496,21 @@ seq =LFSRv3(s,t,50)
 * If you want to make it fast for long length of LFSR,use LFSRv3.m 
 
 ______________________________________
+
+# Cite As
+```
+@software{nikesh_bajaj_2021_4726667,
+  author       = {Nikesh Bajaj},
+  title        = {Nikeshbajaj/Linear\_Feedback\_Shift\_Register: 1.0.6},
+  month        = apr,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {1.0.6},
+  doi          = {10.5281/zenodo.4726667},
+  url          = {https://doi.org/10.5281/zenodo.4726667}
+}
+```
+
 
 # Contacts:
 
