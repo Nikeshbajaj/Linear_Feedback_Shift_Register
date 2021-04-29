@@ -4,6 +4,27 @@
 ### **[PyPi - project](https://pypi.org/project/pylfsr/)**
 ### **[Documentation](https://lfsr.readthedocs.io/en/latest/)**
 
+[![Documentation Status](https://readthedocs.org/projects/lfsr/badge/?version=latest)](https://lfsr.readthedocs.io/en/latest/?badge=latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI version fury.io](https://badge.fury.io/py/pylfsr.svg)](https://pypi.org/project/pylfsr/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![GitHub release](https://img.shields.io/github/release/nikeshbajaj/Linear_Feedback_Shift_Register.svg)](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/releases)
+[![PyPI format](https://img.shields.io/pypi/format/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
+[![HitCount](http://hits.dwyl.io/nikeshbajaj/pylfsr.svg)](http://hits.dwyl.io/nikeshbajaj/pylfsr)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/nikeshbajaj/pylfsr?style=plastic)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/nikeshbajaj/pylfsr.svg)](http://isitmaintained.com/project/nikeshbajaj/pylfsr "Percentage of issues still open")
+[![PyPI download month](https://img.shields.io/pypi/dm/pylfsr.svg)](https://pypi.org/project/pylfsr/)
+[![PyPI download week](https://img.shields.io/pypi/dw/pylfsr.svg)](https://pypi.org/project/pylfsr/)
+
+
+[![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://pypi.org/project/pylfsr/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/spkit?style=social)
+
+
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="500"/>
 </p>
