@@ -30,27 +30,30 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/spkit?style=social)
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
 
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="500"/>
 </p>
+
+## Plot Your LFSR with pylfsr
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif" width="800"/>
-  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_8.gif" width="800"/>
 </p>
   
 
 # Python
 
 
-### Requirement : *numpy*
+### Requirement : *numpy*, *matplotlib*
 
 ### Updates: 
   - Fixed the bugs (1) missing initial bit (2) exception
   - **Added test properties of LFSR**
   -   **(1) Balance Property**
   -   **(2) Runlength Property**
-  -   **(3) Autocorrelation Property** 
+  -   **(3) Autocorrelation Property**
+  -  **Ploting function to display LFSR**
+  -  **A5/1 GSM Stream Ciper Generator**
+  -  **Geffe Generator**
 
 ## Installation
 
