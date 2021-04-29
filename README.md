@@ -192,7 +192,7 @@ L.Viz(show=False, show_labels=False,title='R1')
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_0.jpg" width="300"/>
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_0.jpg" width="500"/>
 </p>
 
 
@@ -316,6 +316,10 @@ Output
 Failed one or more tests, check if feedback polynomial is primitive polynomial
 ==================
 ```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/acorr_test_npf.jpg" width="500"/>
+</p>
+
 
 ### Example 8**: Get the feedback polynomial or list
 Reference : http://www.partow.net/programming/polynomials/index.html
