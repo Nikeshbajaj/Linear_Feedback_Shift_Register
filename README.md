@@ -34,16 +34,25 @@
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="500"/>
 </p>
 
+-----
+## Table of contents
+- [**New Updates**](#new-updates)
+- [**Installation**](#installation)
+- [**Examples**](#examples)
+    - [**5-bit LFSR**](#example-1-5-bit-lfsr-with-feedback-polynomial-x5--x2--1)
+    - [**Vizualize each state**](#example-3--to-visualize-the-process-with-3-bit-lfsr-with-default-counter_start_zero--true)
+    - [**Plot your LFSR**](#visulizeplot-your-lfsr)
+    - [**Test properties of LFSR**](#example-6--testing-the-properties)
+    - [**A5/1 GSM Stream Cipher**](#a51-gsm-stream-cipher-generator)
+    - [**Geffe Genegerator**](#geffe-generator)
+- [**Matlab Implementation**](#matlab)
+-----
+
+## New Updates
 ## Plot Your LFSR with pylfsr
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif" width="800"/>
 </p>
-  
-
-# Python
-
-
-## Requirement : *numpy*, *matplotlib*
 
 ## Updates: 
   - Fixed the bugs (1) missing initial bit (2) exception
@@ -55,7 +64,10 @@
   -  **A5/1 GSM Stream Ciper Generator**
   -  **Geffe Generator**
 
+
 # Installation
+
+## Requirement : *numpy*, *matplotlib*
 
 ### with pip
 
@@ -344,7 +356,7 @@ L.changeFpoly(newfpoly =[23,9],reset=False)
 seq2 = L.runKCycle(20)
 ```
 
-### A5/1 GSM Stream cipher generator
+## A5/1 GSM Stream cipher generator
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/A5-1_GSM_cipher.svg" width="500"/>
 </p>
@@ -378,7 +390,7 @@ A5.getSeq()
 ```
 
 
-### Enhanced A5/1
+## Enhanced A5/1
 
 Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5958486
 
@@ -397,7 +409,7 @@ b3 = R3.state[10]
 
 
 
-### Geffe Generator
+## Geffe Generator
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Geffe_0.jpg" width="500"/>
 </p>
