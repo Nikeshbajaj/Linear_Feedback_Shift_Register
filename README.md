@@ -345,6 +345,11 @@ seq2 = L.runKCycle(20)
 ```
 
 ### A5/1 GSM Stream cipher generator
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/A5-1_GSM_cipher.svg" width="500"/>
+</p>
+
+Ref: https://en.wikipedia.org/wiki/A5/1
 
 ```
 import numpy as np
@@ -393,6 +398,12 @@ b3 = R3.state[10]
 
 
 ### Geffe Generator
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Geffe_0.jpg" width="500"/>
+</p>
+
+Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source code in C. john wiley & sons, 2007.
+	Chaper 16 
 
 ```
 import numpy as np
