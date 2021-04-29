@@ -1,8 +1,9 @@
 # LFSR -Linear Feedback Shift Register
 
-### **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)**
-### **[PyPi - project](https://pypi.org/project/pylfsr/)**
-### **[Documentation](https://lfsr.readthedocs.io/en/latest/)**
+
+## Links: **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
+-----
+
 
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
 [![Documentation Status](https://readthedocs.org/projects/lfsr/badge/?version=latest)](https://lfsr.readthedocs.io/en/latest/?badge=latest)
@@ -33,7 +34,10 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="500"/>
 </p>
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif" width="400"/>
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_8.gif" width="400"/>
+</p>
 
 # Python
 
