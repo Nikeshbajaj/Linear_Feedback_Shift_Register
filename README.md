@@ -58,9 +58,9 @@
 ## Updates: 
   - Fixed the bugs (1) missing initial bit (2) exception
   - **Added test properties of LFSR**
-  -   **(1) Balance Property**
-  -   **(2) Runlength Property**
-  -   **(3) Autocorrelation Property**
+	  -   **(1) Balance Property**
+	  -   **(2) Runlength Property**
+	  -   **(3) Autocorrelation Property**
   -  **Ploting function to display LFSR**
   -  **A5/1 GSM Stream Ciper Generator**
   -  **Geffe Generator**
