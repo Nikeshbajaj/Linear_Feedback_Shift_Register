@@ -13,12 +13,15 @@
 [![PyPI format](https://img.shields.io/pypi/format/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
 [![PyPI implementation](https://img.shields.io/pypi/implementation/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
 [![HitCount](http://hits.dwyl.io/nikeshbajaj/pylfsr.svg)](http://hits.dwyl.io/nikeshbajaj/Linear_Feedback_Shift_Register)
-
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Nikeshbajaj/Linear_Feedback_Shift_Register/1.0.1)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/nikeshbajaj/pylfsr.svg)](http://isitmaintained.com/project/nikeshbajaj/pylfsr "Percentage of issues still open")
+![GitHub issues](https://img.shields.io/github/issues-raw/Nikeshbajaj/Linear_Feedback_Shift_Register)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Nikeshbajaj/Linear_Feedback_Shift_Register)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Nikeshbajaj/Linear_Feedback_Shift_Register.svg)](http://isitmaintained.com/project/Nikeshbajaj/Linear_Feedback_Shift_Register "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/Nikeshbajaj/Linear_Feedback_Shift_Register.svg)](http://isitmaintained.com/project/Nikeshbajaj/Linear_Feedback_Shift_Register "Percentage of issues still open")
+
 [![PyPI download month](https://img.shields.io/pypi/dm/pylfsr.svg)](https://pypi.org/project/pylfsr/)
 [![PyPI download week](https://img.shields.io/pypi/dw/pylfsr.svg)](https://pypi.org/project/pylfsr/)
-
+[![Hits-of-Code](https://hitsofcode.com/github/Nikeshbajaj/Linear_Feedback_Shift_Register)](https://hitsofcode.com/github/Nikeshbajaj/Linear_Feedback_Shift_Register/view)
 
 [![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://pypi.org/project/pylfsr/)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
