@@ -44,8 +44,8 @@
     - [**Vizualize each state**](#example-3--to-visualize-the-process-with-3-bit-lfsr-with-default-counter_start_zero--true)
     - [**Plot your LFSR**](#visulizeplot-your-lfsr)
     - [**Test properties of LFSR**](#example-6--testing-the-properties)
-    - [**A5/1 GSM Stream Cipher**](#a51-gsm-stream-cipher-generator)
-    - [**Geffe Genegerator**](#geffe-generator)
+- [**A5/1 GSM Stream Cipher**](#a51-gsm-stream-cipher-generator)
+- [**Geffe Genegerator**](#geffe-generator)
 - [**Matlab Implementation**](#matlab)
 -----
 
@@ -357,7 +357,7 @@ L.changeFpoly(newfpoly =[23,9],reset=False)
 seq2 = L.runKCycle(20)
 ```
 
-## A5/1 GSM Stream cipher generator
+# A5/1 GSM Stream cipher generator
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/A5-1_GSM_cipher.svg" width="500"/>
 </p>
@@ -410,7 +410,7 @@ b3 = R3.state[10]
 
 
 
-## Geffe Generator
+# Geffe Generator
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Geffe_0.jpg" width="500"/>
 </p>
