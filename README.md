@@ -4,6 +4,7 @@
 ### **[PyPi - project](https://pypi.org/project/pylfsr/)**
 ### **[Documentation](https://lfsr.readthedocs.io/en/latest/)**
 
+![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
 [![Documentation Status](https://readthedocs.org/projects/lfsr/badge/?version=latest)](https://lfsr.readthedocs.io/en/latest/?badge=latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyPI version fury.io](https://badge.fury.io/py/pylfsr.svg)](https://pypi.org/project/pylfsr/)
@@ -11,8 +12,9 @@
 [![GitHub release](https://img.shields.io/github/release/nikeshbajaj/Linear_Feedback_Shift_Register.svg)](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/releases)
 [![PyPI format](https://img.shields.io/pypi/format/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
 [![PyPI implementation](https://img.shields.io/pypi/implementation/pylfsr.svg)](https://pypi.python.org/pypi/pylfsr/)
-[![HitCount](http://hits.dwyl.io/nikeshbajaj/pylfsr.svg)](http://hits.dwyl.io/nikeshbajaj/pylfsr)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/nikeshbajaj/pylfsr?style=plastic)
+[![HitCount](http://hits.dwyl.io/nikeshbajaj/pylfsr.svg)](http://hits.dwyl.io/nikeshbajaj/Linear_Feedback_Shift_Register)
+
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Nikeshbajaj/Linear_Feedback_Shift_Register/1.0.1)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/nikeshbajaj/pylfsr.svg)](http://isitmaintained.com/project/nikeshbajaj/pylfsr "Percentage of issues still open")
 [![PyPI download month](https://img.shields.io/pypi/dm/pylfsr.svg)](https://pypi.org/project/pylfsr/)
 [![PyPI download week](https://img.shields.io/pypi/dw/pylfsr.svg)](https://pypi.org/project/pylfsr/)
@@ -22,7 +24,7 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
 
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/spkit?style=social)
-
+![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
 
 
 <p align="center">
