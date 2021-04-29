@@ -43,9 +43,9 @@
 # Python
 
 
-### Requirement : *numpy*, *matplotlib*
+## Requirement : *numpy*, *matplotlib*
 
-### Updates: 
+## Updates: 
   - Fixed the bugs (1) missing initial bit (2) exception
   - **Added test properties of LFSR**
   -   **(1) Balance Property**
@@ -55,7 +55,7 @@
   -  **A5/1 GSM Stream Ciper Generator**
   -  **Geffe Generator**
 
-## Installation
+# Installation
 
 ### with pip
 
@@ -156,7 +156,7 @@ fpoly = [3,2]
 L = LFSR(initstate=state,fpoly=fpoly,counter_start_zero=False)
 print('count \t state \t\toutbit \t seq')
 print('-'*50)
-for _ in range(14):
+for _ in range(15):
     print(L.count,L.state,'',L.outbit,L.seq,sep='\t')
     L.next()
 print('-'*50)
@@ -165,25 +165,37 @@ print('Output: ',L.seq)
 
 Output
 ```
-count 	  state 		outbit 	 seq
+count 	 state 		outbit 	 seq
 --------------------------------------------------
-1	  [1 1 1]		1	[1]
-2	  [0 1 1]		1	[1 1]
-3	  [0 0 1]		1	[1 1 1]
-4	  [1 0 0]		1	[1 1 1 0]
-5	  [0 1 0]		0	[1 1 1 0 0]
-6	  [1 0 1]		0	[1 1 1 0 0 1]
-7	  [1 1 0]		1	[1 1 1 0 0 1 0]
-8	  [1 1 1]		0	[1 1 1 0 0 1 0 1]
-9	  [0 1 1]		1	[1 1 1 0 0 1 0 1 1]
-10	  [0 0 1]		1	[1 1 1 0 0 1 0 1 1 1]
-11	  [1 0 0]		1	[1 1 1 0 0 1 0 1 1 1 0]
-12	  [0 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0 0]
-13	  [1 0 1]		0	[1 1 1 0 0 1 0 1 1 1 0 0 1]
-14	  [1 1 0]		1	[1 1 1 0 0 1 0 1 1 1 0 0 1 0]
+1	[1 1 1]		1	[1]
+2	[0 1 1]		1	[1 1]
+3	[0 0 1]		1	[1 1 1]
+4	[1 0 0]		0	[1 1 1 0]
+5	[0 1 0]		0	[1 1 1 0 0]
+6	[1 0 1]		1	[1 1 1 0 0 1]
+7	[1 1 0]		0	[1 1 1 0 0 1 0]
+8	[1 1 1]		1	[1 1 1 0 0 1 0 1]
+9	[0 1 1]		1	[1 1 1 0 0 1 0 1 1]
+10	[0 0 1]		1	[1 1 1 0 0 1 0 1 1 1]
+11	[1 0 0]		0	[1 1 1 0 0 1 0 1 1 1 0]
+12	[0 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0 0]
+13	[1 0 1]		1	[1 1 1 0 0 1 0 1 1 1 0 0 1]
+14	[1 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0 0 1 0]
 --------------------------------------------------
 Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
 ```
+
+## Visulize/Plot your LFSR
+```
+L.Viz(show=False, show_labels=False,title='R1')
+
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_0.jpg" width="300"/>
+</p>
+
+
 
 ## Example 5  ## 23 bit LFSR with custum state and feedback polynomial
 ```
@@ -328,7 +340,37 @@ L.changeFpoly(newfpoly =[23,9],reset=False)
 seq2 = L.runKCycle(20)
 ```
 
-### For A5/1 GSM Stream cipher generator
+### A5/1 GSM Stream cipher generator
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from pylfsr import A5_1
+
+A5 = A5_1(key='random')
+print('key: ',A5.key)
+A5.R1.Viz(title='R1')
+A5.R2.Viz(title='R2')
+A5.R3.Viz(title='R3')
+
+print('key: ',A5.key)
+print()
+print('count \t cbit\t\tclk\t R1_R2_R3\toutbit \t seq')
+print('-'*80)
+for _ in range(15):
+    print(A5.count,A5.getCbits(),A5.clock_bit,A5.getLastbits(),A5.outbit,A5.getSeq(),sep='\t')
+    A5.next()
+print('-'*80)
+print('Output: ',A5.seq)
+
+A5.runKCycle(1000)
+A5.getSeq()
+
+```
+
+
+### Enhanced A5/1
+
 Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5958486
 
 ```
@@ -339,10 +381,38 @@ R3 = LFSR(fpoly = [22,21])
 
 # clocking bits
 b1 = R1.state[8]
-b2 = R1.state[10]
-b3 = R1.state[10]
+b2 = R3.state[10]
+b3 = R3.state[10]
 
 ```
+
+
+
+### Geffe Generator
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from pylfsr import Geffe, LFSR
+
+kLFSR = [LFSR(initstate='random') for _ in range(8)]
+cLFSR = LFSR(initstate='random')
+
+GG = Geffe(kLFSR_list=kLFSR, cLFSR=cLFSR)
+
+print('key: ',GG.getState())
+print()
+for _ in range(50):
+    print(GG.count,GG.m_count,GG.outbit_k,GG.sel_k,GG.outbit,GG.getSeq(),sep='\t')
+    GG.next()
+
+GG.runKCycle(1000)
+GG.getSeq()
+```
+
+
+
+
 _______________________________________________________________________________________________
 
 # MATLAB
