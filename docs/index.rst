@@ -7,6 +7,7 @@ Linear Feedback Shift Register - Documentation
 .. image:: https://readthedocs.org/projects/lfsr/badge/?version=latest
   :target: https://lfsr.readthedocs.io/en/latest/
   :alt: Documentation Status
+  
 .. image:: https://img.shields.io/pypi/v/pylfsr?style=plastic
   :target: https://pypi.python.org/pypi/pylfsr
   :alt: PyPI
@@ -19,7 +20,7 @@ Linear Feedback Shift Register - Documentation
 
 
 
-
+.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif
 
 Linear Feedback Shift Register.
 This package includes following components:
