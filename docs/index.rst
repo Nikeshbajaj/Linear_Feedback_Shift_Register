@@ -7,7 +7,7 @@ This package includes following components:
 .. toctree::
    :maxdepth: 3
 
-   lfsrHelp
-   README
+   lfsrClass
+   LFSR_Examples
    matlab
    contacts
