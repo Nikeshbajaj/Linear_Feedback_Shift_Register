@@ -471,7 +471,7 @@ Ref: https://en.wikipedia.org/wiki/A5/1
 Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5958486
 
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Enhanced_A51.png
-	:width: 50%
+	:width: 70%
 
 ::
   
