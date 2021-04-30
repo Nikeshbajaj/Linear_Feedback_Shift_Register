@@ -1,4 +1,4 @@
-LFSR - Examples
+LFSR 
 ======================================
 
 **Links:**
@@ -11,9 +11,10 @@ LFSR - Examples
 * **Installation:** *pip install pylfsr*
 
 
-**Requirement** : *numpy*,  *matplotlib*
-
 **Installation**
+---------
+
+**Requirement** : *numpy*,  *matplotlib*
 
 **With pip:**
 
@@ -31,7 +32,13 @@ Download the repository or clone it with git, after cd in directory build it fro
   python setup.py install
 
 
-**Example 1**: 5-bit LFSR with feedback polynomial *x^5 + x^2 + 1*
+Examples
+=========
+
+**Basic Examples**
+----------
+
+Example 1: 5-bit LFSR with feedback polynomial *x^5 + x^2 + 1*
 ----------
 
 ::
@@ -61,7 +68,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   L.runFullCycle()
   L.info()
 
-**Example 2**: 5-bit LFSR with custum state and feedback polynomial
+Example 2: 5-bit LFSR with custum state and feedback polynomial
 ----------
 
 ::
@@ -73,7 +80,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   tempseq = L.runKCycle(10)
   L.set(fpoly=[5,3])
 
-**Example 3**: 23-bit LFSR with custum state and feedback polynomial
+Example 3: 23-bit LFSR with custum state and feedback polynomial
 ----------
 
 ::
@@ -85,7 +92,7 @@ Download the repository or clone it with git, after cd in directory build it fro
   seq = L.seq
 
 
-**Example 4**: 23-bit LFSR
+Example 4: 23-bit LFSR
 ----------
 
 ::
@@ -105,11 +112,52 @@ Download the repository or clone it with git, after cd in directory build it fro
    Output bit   :  -1
    feedback bit :  -1
 
+**Poltting & Visualizations**
+----------
+
+Example 5: Plotting LFSR with pylsr
+----------
+
+Each LFSR can be visualize as it in current state by using *.Viz()* method 
+
+::
+  
+  L = LFSR(initstate=[1,1,0,1,1],fpoly=[5,2])
+  L.runKCycle(15)
+  L.Viz(title='R1')
+
+.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_1.jpg
+
+
+Example 6: Dynamic visualization of LFSR - Animation*
+----------
+
+::
+  
+  %matplotlib notebook
+  L = LFSR(initstate=[1,0,1,0,1],fpoly=[5,4,3,2],counter_start_zero=False)
+  
+::
+  
+  fig, ax = plt.subplots(figsize=(8,3))
+  for _ in range(35):
+    ax.clear()
+    L.Viz(ax=ax, title='R1')
+    plt.ylim([-0.1,None])
+    #plt.tight_layout()
+    L.next()
+    fig.canvas.draw()
+    plt.pause(0.1)
+
+
+.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_1.gif
+
 ...
 ----------
 
-**Setting clock start :**: Initial output bit
+**Setting clock start :**:
 ----------
+  Initial output bit
   An argument *counter_start_zero* can be used to initialize the output bit.
   * If *counter_start_zero=True* (default), the output bit is initialize by -1, to illustrate that No clock is provided yet.
     In this case, *cout* (counter) starts with 0. The first output is not computed until first cylce is executed, such as by executing .next(), .runFullCycle, etc
@@ -121,7 +169,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 *counter_start_zero=True* can be seen as dealyed response by one bit.
 
 
-**Example 5.1**: Visualize the process with 3-bit LFSR, each step, with default *counter_start_zero = True*
+Example 7.1: Visualize the process with 3-bit LFSR, each step, with default *counter_start_zero = True*
 ----------
 
 ::
@@ -160,7 +208,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
   
-**Example 5.2**: Visualize the process with 3-bit LFSR, each step, with *counter_start_zero = False*
+Example 7.2: Visualize the process with 3-bit LFSR, each step, with *counter_start_zero = False*
 ----------
 
 ::
@@ -198,11 +246,11 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   --------------------------------------------------
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
-  
+
 ...
 ----------
 
-**LFSR Properties :**: test three +1 properties of LFSR
+**LFSR Properties :**: Test 3+1 properties of LFSR
 ----------
   Using *test_properties(verbose=1)* method, it we can test if LSFR set be state and polynomial setisfies the following properites
   in addition to periodicity (period T = 2^M -1) for M-bit LFSR
@@ -210,7 +258,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   * (2) Runlength Property
   * (3) Autocorrelation Property
 
-**Example 6.1**: test [5,3], for 5-bit LFSR, which we know is a primitive polynomial
+Example 8.1: test [5,3], for 5-bit LFSR, which we know is a primitive polynomial
 ----------
 
 ::
@@ -253,7 +301,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 
 
 
-**Example 6.2**: test [5,1], for 5-bit LFSR, which we know is ***NOT*** a primitive polynomial
+Example 8.2: test [5,1], for 5-bit LFSR, which we know is ***NOT*** a primitive polynomial
 ----------
 
 ::
@@ -294,7 +342,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/acorr_test_npf.jpg
 
 
-**Example 6.3**: test individual properties
+Example 8.3: test individual properties
 ----------
 
 ::
@@ -323,7 +371,7 @@ list include half of polynomials for each degree and other half can be compputed
 
 Ref : http://www.partow.net/programming/polynomials/index.html
 
-**Example 7.1**: Get a list of feedback polynomials for a m-bit LFSR
+Example 9.1: Get a list of feedback polynomials for a m-bit LFSR
 ----------
 
 ::
@@ -337,7 +385,7 @@ Ref : http://www.partow.net/programming/polynomials/index.html
   fpolyDict = L.get_fpolyList()
 
 
-**Example 7.2**: Get a image replica of a feedback polynomial
+Example 9.2: Get a image replica of a feedback polynomial
 ----------
 Image replica of a primitive polynomial is a primitive polynomial, hence a valid feedback polynomial for LFSR
 For m-bit primitive polynomial p(x) = x^m + x^k + .. + 1, a image replica is ip(x) = x^(-m)p(x)
@@ -355,7 +403,7 @@ where 0 < k < m
   [5, 3, 2, 1]
 
 
-**Example 7.3: Changing feedback polynomial in between**
+Example 9.3: Changing feedback polynomial in between
 ----------
 
 After generating some bits from an LFSR, a feedback polynomial can be changed keeping the current state as intial state and generate
