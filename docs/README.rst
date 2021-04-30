@@ -32,10 +32,10 @@ Download the repository or clone it with git, after cd in directory build it fro
   python setup.py install
 
 
-Examples
+**Examples**
 =========
 
-**Basic Examples**
+**Basic Examples:**
 ----------
 
 Example 1: 5-bit LFSR with feedback polynomial *xsup5 + xsub2 + 1*
@@ -115,7 +115,7 @@ Example 4: 23-bit LFSR
 **+**
 ----------
 
-**Poltting & Visualizations**
+**Poltting & Visualizations:**
 ----------
 
 Example 5: Plotting LFSR with pylsr
@@ -158,7 +158,7 @@ Example 6: Dynamic visualization of LFSR - Animation*
 **+**
 ----------
 
-**Setting clock start :**:
+**Setting clock start:**
 ----------
   Initial output bit
   An argument *counter_start_zero* can be used to initialize the output bit.
@@ -253,7 +253,7 @@ Example 7.2: Visualize the process with 3-bit LFSR, each step, with *counter_sta
 **+**
 ----------
 
-**LFSR Properties :**: Test 3+1 properties of LFSR
+**LFSR Properties:**: Test 3+1 properties of LFSR
 ----------
   Using *test_properties(verbose=1)* method, it we can test if LSFR set be state and polynomial setisfies the following properites
   in addition to periodicity (period T = 2^M -1) for M-bit LFSR
@@ -365,7 +365,7 @@ Example 8.3: test individual properties
 **+**
 ----------
 
-**Feedback (Primitive) Polynomials**
+**Feedback (Primitive) Polynomials:**
 ----------
 A primitive polynomial is is irreducible, and not trivial to derive. A list of primitive polynomials upto 32 degree can be found 
 at Ref, which is not an exhaustive list. Since for each primitive polynomial, an image replica (which is also primitive) can be computed easily
@@ -428,7 +428,7 @@ the new sequece.
 **+**
 ----------
 
-Generators
+**Generators**
 ==========
 
 **A5/1 GSM Stream cipher generator**
