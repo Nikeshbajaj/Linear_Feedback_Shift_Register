@@ -1,7 +1,7 @@
 LFSR - Examples
 ======================================
 
-## Links: **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
+**Links:** **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
 -----
 
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
