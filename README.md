@@ -199,7 +199,7 @@ count 	 state 		outbit 	 seq
 Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
 ```
 
-## Visulize/Plot your LFSR
+## Visualize & Plot LFSR
 ```
 L.Viz(show=False, show_labels=False,title='R1')
 
@@ -209,6 +209,24 @@ L.Viz(show=False, show_labels=False,title='R1')
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_0.jpg" width="500"/>
 </p>
 
+### Dynamic plot - Animation in notebook
+```
+%matplotlib notebook
+L = LFSR(initstate=[1,0,1,0,1],fpoly=[5,4,3,2],counter_start_zero=False)
+fig, ax = plt.subplots(figsize=(8,3))
+for _ in range(35):
+  ax.clear()
+  L.Viz(ax=ax, title='R1')
+  plt.ylim([-0.1,None])
+  #plt.tight_layout()
+  L.next()
+  fig.canvas.draw()
+  plt.pause(0.1)
+  
+```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_1.gif" width="500"/>
+</p>
 
 
 ## Example 5  ## 23 bit LFSR with custum state and feedback polynomial
@@ -358,6 +376,7 @@ L.changeFpoly(newfpoly =[23,9],reset=False)
 seq2 = L.runKCycle(20)
 ```
 
+# Generators
 # A5/1 GSM Stream cipher generator
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/A5-1_GSM_cipher.svg" width="500"/>
