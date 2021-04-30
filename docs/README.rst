@@ -38,10 +38,9 @@ Download the repository or clone it with git, after cd in directory build it fro
 **Basic Examples:**
 ----------
 
-Example 1: 5-bit LFSR with feedback polynomial *x^5 + x^2 + 1*
+Example 1: 5-bit LFSR with feedback polynomial *x\ :sup:`5`\  +  x\ :sup:`2`\  +  1*
 ----------
-
-p(x) = x\ :sup:`5`\  +  x\ :sup:`2`\  +  1
+default feedback polynomial is *p(x) = x\ :sup:`5`\  +  x\ :sup:`2`\  +  1*
 ::
   
   # import LFSR
