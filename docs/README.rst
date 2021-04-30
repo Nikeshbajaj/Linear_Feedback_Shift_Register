@@ -11,8 +11,6 @@ LFSR - Examples
 * **Installation:** ***pip install pylfsr***
 
 
-![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
-
 **Requirement** : *numpy*,  *matplotlib*
 
 **Installation**
