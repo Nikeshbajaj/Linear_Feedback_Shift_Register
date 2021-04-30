@@ -514,16 +514,5 @@ Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source co
   GG.runKCycle(1000)
   GG.getSeq()
 
-
-
-Contacts
+**+**
 ==========
-
-If any doubt, confusion or feedback please contact me
-
-Nikesh Bajaj: http://nikeshbajaj.in
-
-* `n.bajaj@qmul.ac.uk`
-* `nikkeshbajaj@gmail.com`
-
-PhD Student: **Queen Mary University of London** & **University of Genoa**
