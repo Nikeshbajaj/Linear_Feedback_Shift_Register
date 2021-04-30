@@ -1,12 +1,12 @@
 LFSR - Examples
 ======================================
 
-* **Github Page**: http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/
-* **PyPi - project**: https://pypi.org/project/pylfsr/
-* **Documentation**: https://lfsr.readthedocs.io/en/latest/
-----------
+## Links: **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
+-----
 
-**Requirement** : *numpy*
+![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
+
+**Requirement** : *numpy*,  *matplotlib*
 
 **Installation**
 
@@ -137,10 +137,10 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   
   state = [1,1,1]
   fpoly = [3,2]
-  L = LFSR(initstate=state,fpoly=fpoly,counter_start_zero = False)
+  L = LFSR(initstate=state,fpoly=fpoly,counter_start_zero=False)
   print('count \t state \t\toutbit \t seq')
   print('-'*50)
-  for _ in range(14):
+  for _ in range(15):
       print(L.count,L.state,'',L.outbit,L.seq,sep='\t')
       L.next()
   print('-'*50)
@@ -149,25 +149,46 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   
 ::
   
-    count 	 state 		outbit 	 seq
-    --------------------------------------------------
-    1	  [1 1 1]		1	[1]
-    2	  [0 1 1]		1	[1 1]
-    3	  [0 0 1]		1	[1 1 1]
-    4	  [1 0 0]		1	[1 1 1 0]
-    5	  [0 1 0]		0	[1 1 1 0 0]
-    6	  [1 0 1]		0	[1 1 1 0 0 1]
-    7	  [1 1 0]		1	[1 1 1 0 0 1 0]
-    8	  [1 1 1]		0	[1 1 1 0 0 1 0 1]
-    9	  [0 1 1]		1	[1 1 1 0 0 1 0 1 1]
-    10	  [0 0 1]		1	[1 1 1 0 0 1 0 1 1 1]
-    11	  [1 0 0]		1	[1 1 1 0 0 1 0 1 1 1 0]
-    12	  [0 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0 0]
-    13	  [1 0 1]		0	[1 1 1 0 0 1 0 1 1 1 0 0 1]
-    14	  [1 1 0]		1	[1 1 1 0 0 1 0 1 1 1 0 0 1 0]
-    --------------------------------------------------
-    Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
+  count 	 state 		outbit 	 seq
+  --------------------------------------------------
+  1	[1 1 1]		1	[1]
+  2	[0 1 1]		1	[1 1]
+  3	[0 0 1]		1	[1 1 1]
+  4	[1 0 0]		0	[1 1 1 0]
+  5	[0 1 0]		0	[1 1 1 0 0]
+  6	[1 0 1]		1	[1 1 1 0 0 1]
+  7	[1 1 0]		0	[1 1 1 0 0 1 0]
+  8	[1 1 1]		1	[1 1 1 0 0 1 0 1]
+  9	[0 1 1]		1	[1 1 1 0 0 1 0 1 1]
+  10	[0 0 1]		1	[1 1 1 0 0 1 0 1 1 1]
+  11	[1 0 0]		0	[1 1 1 0 0 1 0 1 1 1 0]
+  12	[0 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0 0]
+  13	[1 0 1]		1	[1 1 1 0 0 1 0 1 1 1 0 0 1]
+  14	[1 1 0]		0	[1 1 1 0 0 1 0 1 1 1 0 0 1 0]
+  --------------------------------------------------
+  Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
+  
+**Example 5**: 23-bit LFSR
+----------
+
+::
+  
+  fpoly = [23,19]
+  L1 = LFSR(fpoly=fpoly,initstate ='ones', verbose=False)
+  L1.info()
+  
+  
+::
+  
+  23 bit LFSR with feedback polynomial  x^23 + x^19 + 1
+  Expected Period (if polynomial is primitive) =  8388607
+  Current :
+   State        :  [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
+   Count        :  0
+   Output bit   :  -1
+   feedback bit :  -1
+
 **LFSR Properties :**: test three +1 properties of LFSR
 ----------
   Using *test_properties(verbose=1)* method, it we can test if LSFR set be state and polynomial setisfies the following properites
@@ -176,7 +197,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   * (2) Runlength Property
   * (3) Autocorrelation Property
 
-**Example 5.1**: test [5,3], for 5-bit LFSR, which we know is a primitive polynomial
+**Example 6.1**: test [5,3], for 5-bit LFSR, which we know is a primitive polynomial
 ----------
 
 ::
@@ -219,7 +240,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 
 
 
-**Example 5.2**: test [5,1], for 5-bit LFSR, which we know is NOT a primitive polynomial
+**Example 6.2**: test [5,1], for 5-bit LFSR, which we know is ***NOT*** a primitive polynomial
 ----------
 
 ::
@@ -310,8 +331,43 @@ Reference : http://www.partow.net/programming/polynomials/index.html
   seq2 = L.runKCycle(20)
 
 
-**A5/1 GSM Stream cipher generator**
+# **A5/1 GSM Stream cipher generator**
 ----------
+
+Ref: https://en.wikipedia.org/wiki/A5/1
+
+
+.. image:: https://upload.wikimedia.org/wikipedia/commons/5/5e/A5-1_GSM_cipher.svg
+
+::
+  
+  import numpy as np
+  import matplotlib.pyplot as plt
+  from pylfsr import A5_1
+
+  A5 = A5_1(key='random')
+  print('key: ',A5.key)
+  A5.R1.Viz(title='R1')
+  A5.R2.Viz(title='R2')
+  A5.R3.Viz(title='R3')
+
+  print('key: ',A5.key)
+  print()
+  print('count \t cbit\t\tclk\t R1_R2_R3\toutbit \t seq')
+  print('-'*80)
+  for _ in range(15):
+      print(A5.count,A5.getCbits(),A5.clock_bit,A5.getLastbits(),A5.outbit,A5.getSeq(),sep='\t')
+      A5.next()
+  print('-'*80)
+  print('Output: ',A5.seq)
+
+  A5.runKCycle(1000)
+  A5.getSeq()
+
+
+**Enhanced A5/1**
+----------
+
 Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5958486
 
 ::
@@ -323,9 +379,36 @@ Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5
 
   # clocking bits
   b1 = R1.state[8]
-  b2 = R1.state[10]
-  b3 = R1.state[10]
+  b2 = R3.state[10]
+  b3 = R3.state[10]
 
+**Geffe Generator**
+----------
+
+Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source code in C. john wiley & sons, 2007.
+	Chaper 16 
+
+.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Geffe_0.jpg
+
+::
+  
+  import numpy as np
+  import matplotlib.pyplot as plt
+  from pylfsr import Geffe, LFSR
+
+  kLFSR = [LFSR(initstate='random') for _ in range(8)]
+  cLFSR = LFSR(initstate='random')
+
+  GG = Geffe(kLFSR_list=kLFSR, cLFSR=cLFSR)
+
+  print('key: ',GG.getState())
+  print()
+  for _ in range(50):
+      print(GG.count,GG.m_count,GG.outbit_k,GG.sel_k,GG.outbit,GG.getSeq(),sep='\t')
+      GG.next()
+
+  GG.runKCycle(1000)
+  GG.getSeq()
 
 
 
