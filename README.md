@@ -396,6 +396,11 @@ A5.getSeq()
 
 Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5958486
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Enhanced_A51.png" width="500"/>
+</p>
+
+
 ```
 # Three LFSRs initialzed with 'ones' though they are intialized with encription key
 R1 = LFSR(fpoly = [19,18,17,14])
