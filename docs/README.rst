@@ -4,11 +4,11 @@ LFSR - Examples
 **Links:**
 -----
 
-* **Github Page   - http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/** 
-* **Documentation - https://lfsr.readthedocs.io/** 
-* **Github	  - https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register**
-* **PyPi-project  - https://pypi.org/project/pylfsr/)**
-* **Installation:** ***pip install pylfsr***
+* **Github Page**   - http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register
+* **Documentation** - https://lfsr.readthedocs.io
+* **Github**	    - https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register
+* **PyPi-project**  - https://pypi.org/project/pylfsr
+* **Installation:** *pip install pylfsr*
 
 
 **Requirement** : *numpy*,  *matplotlib*
