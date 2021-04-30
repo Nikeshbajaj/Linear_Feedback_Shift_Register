@@ -38,9 +38,10 @@ Download the repository or clone it with git, after cd in directory build it fro
 **Basic Examples:**
 ----------
 
-Example 1: 5-bit LFSR with feedback polynomial *xsup5 + xsub2 + 1*
+Example 1: 5-bit LFSR with feedback polynomial *x^5 + x^2 + 1*
 ----------
 
+p(x) = x\ :sup:`5`\  +  x\ :sup:`2`\  +  1
 ::
   
   # import LFSR
@@ -172,7 +173,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 *counter_start_zero=True* can be seen as dealyed response by one bit.
 
 
-Example 7.1: Visualize the process with 3-bit LFSR, each step, with default *counter_start_zero = True*
+Example 7.1: Visualize, 3-bit LFSR at each step, with default *counter_start_zero = True*
 ----------
 
 ::
@@ -211,7 +212,7 @@ Example 7.1: Visualize the process with 3-bit LFSR, each step, with default *cou
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
   
-Example 7.2: Visualize the process with 3-bit LFSR, each step, with *counter_start_zero = False*
+Example 7.2: Visualize, 3-bit LFSR at each step, with *counter_start_zero = False*
 ----------
 
 ::
