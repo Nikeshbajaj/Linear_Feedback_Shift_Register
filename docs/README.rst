@@ -38,8 +38,8 @@ Examples
 **Basic Examples**
 ----------
 
-Example 1: 5-bit LFSR with feedback polynomial *x^5 + x^2 + 1*
-----------
+Example 1: 5-bit LFSR with feedback polynomial *xsup5 + xsub2 + 1*
+**************
 
 ::
   
