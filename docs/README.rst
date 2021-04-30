@@ -396,8 +396,8 @@ Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source co
   import matplotlib.pyplot as plt
   from pylfsr import Geffe, LFSR
 
-  kLFSR = [LFSR(initstate='random') for _ in range(8)]
-  cLFSR = LFSR(initstate='random')
+  kLFSR = [LFSR(initstate='random') for _ in range(8)]  # List of 8 5-bit LFSRs with default feedback polynomial and random initial state 
+  cLFSR = LFSR(initstate='random')                      # A 5-bit LFSR with for selecting one of 8 output at a time
 
   GG = Geffe(kLFSR_list=kLFSR, cLFSR=cLFSR)
 
