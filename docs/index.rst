@@ -1,5 +1,5 @@
-Linear Feedback Shift Register documentation!
-=====================================
+Linear Feedback Shift Register - Documentation
+==============================
 
 Linear Feedback Shift Register.
 This package includes following components:
