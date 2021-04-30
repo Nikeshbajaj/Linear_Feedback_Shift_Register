@@ -112,6 +112,9 @@ Example 4: 23-bit LFSR
    Output bit   :  -1
    feedback bit :  -1
 
+|
+----------
+
 **Poltting & Visualizations**
 ----------
 
@@ -152,7 +155,7 @@ Example 6: Dynamic visualization of LFSR - Animation*
 
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_1.gif
 
-...
+|
 ----------
 
 **Setting clock start :**:
@@ -247,7 +250,7 @@ Example 7.2: Visualize the process with 3-bit LFSR, each step, with *counter_sta
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
 
-...
+|
 ----------
 
 **LFSR Properties :**: Test 3+1 properties of LFSR
@@ -359,7 +362,7 @@ Example 8.3: test individual properties
  L.autocorr_property(p.copy())
 
 
-...
+|
 ----------
 
 **Feedback (Primitive) Polynomials**
@@ -422,8 +425,9 @@ the new sequece.
   L.changeFpoly(newfpoly =[23,9],reset=False)
   seq2 = L.runKCycle(20)
 
-...
-----------
+
+Generators
+==========
 
 **A5/1 GSM Stream cipher generator**
 ----------
