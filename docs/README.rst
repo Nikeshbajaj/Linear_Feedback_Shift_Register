@@ -1,8 +1,11 @@
 LFSR - Examples
 ======================================
 
-**Links:** **[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
+**Links:**
 -----
+
+**[Github Page](http://nikeshbajaj.github.io/Linear_Feedback_Shift_Register/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
+
 
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
 
@@ -78,20 +81,45 @@ Download the repository or clone it with git, after cd in directory build it fro
   L.runKCycle(10)
   L.info()
   seq = L.seq
+
+
+**Example 4**: 23-bit LFSR
+----------
+
+::
   
-**Clock start (count) :**: Initial output bit
+  fpoly = [23,19]
+  L1 = LFSR(fpoly=fpoly,initstate ='ones', verbose=False)
+  L1.info()
+  
+  
+::
+  
+  23 bit LFSR with feedback polynomial  x^23 + x^19 + 1
+  Expected Period (if polynomial is primitive) =  8388607
+  Current :
+   State        :  [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
+   Count        :  0
+   Output bit   :  -1
+   feedback bit :  -1
+
+...
+----------
+
+**Setting clock start :**: Initial output bit
 ----------
   An argument *counter_start_zero* can be used to initialize the output bit.
   * If *counter_start_zero=True* (default), the output bit is initialize by -1, to illustrate that No clock is provided yet.
-    In this case, *cout* (counter) starts with 0. The first output is not computed untill at least one cylce is executed, such as by executing .next(), .runFullCycle, etc
-  * If *counter_start_zero=False*, the output bit is initialize by the last bit of register. In onse sense, first clock cycle is executed.
+    In this case, *cout* (counter) starts with 0. The first output is not computed until first cylce is executed, such as by executing .next(), .runFullCycle, etc
+  * If *counter_start_zero=False*, the output bit is initialize by the last bit of register. In one sense, first clock cycle is executed.
     This is why, in this case, *cout* (counter) starts with 1.
     
-In both cases counter_start_zero =True or False, the L.seq will be same, only difference is the number of output bits. 
+In both cases counter_start_zero =True or False, the L.seq will be same, the only difference is the total number of output bits produced after N-cycles, i.e.
 when setting *counter_start_zero = False*, there will be one extra bit, since first bit was already computed. To understand this, look at following two examples.
+*counter_start_zero=True* can be seen as dealyed response by one bit.
 
 
-**Example 4.1**: Visualize the process with 3-bit LFSR, each step, with default *counter_start_zero = True*
+**Example 5.1**: Visualize the process with 3-bit LFSR, each step, with default *counter_start_zero = True*
 ----------
 
 ::
@@ -130,7 +158,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
   
-**Example 4.2**: Visualize the process with 3-bit LFSR, each step, with *counter_start_zero = False*
+**Example 5.2**: Visualize the process with 3-bit LFSR, each step, with *counter_start_zero = False*
 ----------
 
 ::
@@ -169,25 +197,8 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
   
-**Example 5**: 23-bit LFSR
+...
 ----------
-
-::
-  
-  fpoly = [23,19]
-  L1 = LFSR(fpoly=fpoly,initstate ='ones', verbose=False)
-  L1.info()
-  
-  
-::
-  
-  23 bit LFSR with feedback polynomial  x^23 + x^19 + 1
-  Expected Period (if polynomial is primitive) =  8388607
-  Current :
-   State        :  [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
-   Count        :  0
-   Output bit   :  -1
-   feedback bit :  -1
 
 **LFSR Properties :**: test three +1 properties of LFSR
 ----------
@@ -281,7 +292,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/acorr_test_npf.jpg
 
 
-**Example 5.3**: test individual properties
+**Example 6.3**: test individual properties
 ----------
 
 ::
@@ -298,12 +309,20 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
  L.autocorr_property(p.copy())
 
 
-**Feedback Polynomials**
+...
 ----------
 
-**Example 6**: Get the feedback polynomial or list
+**Feedback (Primitive) Polynomials**
 ----------
-Reference : http://www.partow.net/programming/polynomials/index.html
+A primitive polynomial is is irreducible, and not trivial to derive. A list of primitive polynomials upto 32 degree can be found 
+at Ref, which is not an exhaustive list. Since for each primitive polynomial, an image replica (which is also primitive) can be computed easily
+list include half of polynomials for each degree and other half can be compputed by *get_Ifpoly()* method, see example 7.2
+
+
+Ref : http://www.partow.net/programming/polynomials/index.html
+
+**Example 7.1**: Get a list of feedback polynomials for a m-bit LFSR
+----------
 
 ::
   
@@ -314,8 +333,30 @@ Reference : http://www.partow.net/programming/polynomials/index.html
   # list of all feedback polynomials as a dictionary
   fpolyDict = L.get_fpolyList()
 
-**Changing feedback polynomial in between**
+
+**Example 7.2**: Get a image replica of a feedback polynomial
 ----------
+Image replica of a primitive polynomial is a primitive polynomial, hence a valid feedback polynomial for LFSR
+For m-bit primitive polynomial p(x) = x^m + x^k + .. + 1, a image replica is ip(x) = x^(-m)p(x)
+where 0 < k < m
+ 
+::
+  
+  L = LFSR()
+  L.get_Ifpoly([5,3])
+  [5, 2]
+  
+::
+  
+  L.get_Ifpoly([5,4,3,2])
+  [5, 3, 2, 1]
+
+
+**Example 7.3: Changing feedback polynomial in between**
+----------
+
+After generating some bits from an LFSR, a feedback polynomial can be changed keeping the current state as intial state and generate
+the new sequece.
 
 ::
   
@@ -330,8 +371,10 @@ Reference : http://www.partow.net/programming/polynomials/index.html
   L.changeFpoly(newfpoly =[23,9],reset=False)
   seq2 = L.runKCycle(20)
 
+...
+----------
 
-# **A5/1 GSM Stream cipher generator**
+**A5/1 GSM Stream cipher generator**
 ----------
 
 Ref: https://en.wikipedia.org/wiki/A5/1
@@ -382,6 +425,7 @@ Reference Article: **Enhancement of A5/1**: https://doi.org/10.1109/ETNCC.2011.5
   b2 = R3.state[10]
   b3 = R3.state[10]
 
+
 **Geffe Generator**
 ----------
 
@@ -411,9 +455,11 @@ Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source co
   GG.getSeq()
 
 
+...
+----------
 
 
-Contacts
+**Contacts**
 ----------
 
 If any doubt, confusion or feedback please contact me
