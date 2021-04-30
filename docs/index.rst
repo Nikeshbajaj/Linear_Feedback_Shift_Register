@@ -10,3 +10,4 @@ This package includes following components:
    lfsrHelp
    README
    matlab
+   contacts
