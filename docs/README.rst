@@ -330,7 +330,8 @@ Ref : http://www.partow.net/programming/polynomials/index.html
   
   L = LFSR()
   # list of 5-bit feedback polynomials
-  fpoly = L.get_fpolyList(m=5)
+  fpolys = L.get_fpolyList(m=5)
+  [[5, 2], [5, 4, 2, 1], [5, 4, 3, 2]]
   
   # list of all feedback polynomials as a dictionary
   fpolyDict = L.get_fpolyList()
