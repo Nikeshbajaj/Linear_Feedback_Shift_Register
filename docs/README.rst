@@ -38,9 +38,9 @@ Download the repository or clone it with git, after cd in directory build it fro
 **Basic Examples:**
 ----------
 
-Example 1: 5-bit LFSR with feedback polynomial *x\ :sup:`5`\  +  x\ :sup:`2`\  +  1*
+Example 1: 5-bit LFSR with feedback polynomial: x\ :sup:`5`\ + x\ :sup:`2`\ +1
 ----------
-default feedback polynomial is *p(x) = x\ :sup:`5`\  +  x\ :sup:`2`\  +  1*
+default feedback polynomial is p(x) = x\ :sup:`5`\ + x\ :sup:`2`\ + 1
 ::
   
   # import LFSR
@@ -80,7 +80,7 @@ Example 2: 5-bit LFSR with custum state and feedback polynomial
   tempseq = L.runKCycle(10)
   L.set(fpoly=[5,3])
 
-Example 3: 23-bit LFSR with custum state and feedback polynomial
+Example 3: 23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`18`\ +1
 ----------
 
 ::
@@ -92,19 +92,19 @@ Example 3: 23-bit LFSR with custum state and feedback polynomial
   seq = L.seq
 
 
-Example 4: 23-bit LFSR
+Example 4: 23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`5`\ +1
 ----------
 
 ::
   
-  fpoly = [23,19]
+  fpoly = [23,5]
   L1 = LFSR(fpoly=fpoly,initstate ='ones', verbose=False)
   L1.info()
   
   
 ::
   
-  23 bit LFSR with feedback polynomial  x^23 + x^19 + 1
+  23 bit LFSR with feedback polynomial  x^23 + x^5 + 1
   Expected Period (if polynomial is primitive) =  8388607
   Current :
    State        :  [1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
