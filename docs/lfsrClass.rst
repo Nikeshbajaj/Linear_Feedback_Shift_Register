@@ -1,5 +1,5 @@
 
-Class LFSR
+API LFSR
 ======================================
 *class(fpoly=[5,2], initstate='ones', verbose=False)*
 
