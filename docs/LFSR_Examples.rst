@@ -439,6 +439,8 @@ Ref: https://en.wikipedia.org/wiki/A5/1
 
 .. image:: https://upload.wikimedia.org/wikipedia/commons/5/5e/A5-1_GSM_cipher.svg
 
+Image Socuce: https://en.wikipedia.org/wiki/A5/1
+
 ::
   
   import numpy as np
