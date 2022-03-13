@@ -556,7 +556,7 @@ class LFSR():
 		ifpoly: polynomial as list e.g. [5,3] for x^5 + x^3 + 1
 
 		'''
-		if isinstance(fpoly, list) or (isinstance(fpoly, numpy.ndarray) and len(fpoly.shape)==1):
+		if isinstance(fpoly, list) or (isinstance(fpoly, np.ndarray) and len(fpoly.shape)==1):
 			fpoly = list(fpoly)
 			fpoly.sort(reverse=True)
 			ifpoly = [fpoly[0]] +[fpoly[0]-ff for ff in fpoly[1:]]
