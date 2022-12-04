@@ -5,6 +5,8 @@
 -----
 
 
+
+
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
 [![Documentation Status](https://readthedocs.org/projects/lfsr/badge/?version=latest)](https://lfsr.readthedocs.io/en/latest/?badge=latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -34,6 +36,8 @@
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/LFSR.jpg" width="400"/>
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_8.gif" width="500"/>
 </p>
+
+
 
 -----
 ## Table of contents
