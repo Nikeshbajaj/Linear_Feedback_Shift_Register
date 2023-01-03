@@ -5,8 +5,6 @@
 -----
 
 
-
-
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register)
 [![Documentation Status](https://readthedocs.org/projects/lfsr/badge/?version=latest)](https://lfsr.readthedocs.io/en/latest/?badge=latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -48,10 +46,6 @@
 
 
 
-
-
-
-
 -----
 ## Table of contents
 - [**New Updates**](#new-updates)
@@ -70,11 +64,17 @@
 ## New Updates
 ## Plot Your LFSR with pylfsr
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/FibanacciLFSR_2.gif" width="800"/>
-  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/GaloisLFSR_1.gif" width="800"/>
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/FibanacciLFSR_2.gif" width="600"/>
+  <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/GaloisLFSR_1.gif" width="600"/>
 </p>
 
-## Updates: 
+## Updates:
+  **Version: 1.0.7:**
+  -  **Added Galois Configuration**
+  -  Improved Documentation
+  -  **Computing LZ complexity**
+  
+  **Version: 1.0.6:**
   - Fixed the bugs (1) missing initial bit (2) exception
   - **Added test properties of LFSR**
 	  -   **(1) Balance Property**
