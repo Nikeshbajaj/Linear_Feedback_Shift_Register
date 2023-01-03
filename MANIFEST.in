@@ -1,15 +1,14 @@
 
 include *.md
-include LICENSE.txt
+include LICENSE
+include Version
 include requirements.txt
 include pylfsr/__init__.py
+include pylfsr/primitive_polynomials_GF2_dict.txt
 
 recursive-include pylfsr *.py
 recursive-include pylfsr *.txt
 recursive-include examples *.py
-recursive-include examples *.ipynb
-recursive-include *.ipynb
-
 
 ### Exclude
 

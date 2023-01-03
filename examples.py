@@ -5,7 +5,8 @@ L = LFSR()
 L.info()
 L.next()
 L.runKCycle(10)
-L.runFullCycle()
+#L.runFullCycle()
+L.runFullPeriod()
 L.info()
 tempseq = L.runKCycle(10000)    # generate 10000 bits from current state
 
@@ -16,7 +17,7 @@ L1 = LFSR(fpoly=fpoly,initstate =state, verbose=True)
 L1.info()
 tempseq = L1.runKCycle(10)
 tempseq
-L1.set(fpoly=[5,3])
+L1.set_fpoly(fpoly=[5,3])
 
 ## Example 3 ## TO visualize the process with 3-bit LFSR, with default counter_start_zero = True
 state = [1,1,1]
@@ -49,7 +50,8 @@ L.info()
 L.runKCycle(10)
 L.info()
 seq = L.seq
-L.changeFpoly(newfpoly =[23,21])
+#L.changeFpoly(newfpoly =[23,21])
+L.set_fpoly(fpoly =[23,21])
 seq1 = L.runKCycle(20)
 
 ##  Example 6 ## testing the properties

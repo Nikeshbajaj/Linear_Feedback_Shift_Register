@@ -73,7 +73,7 @@
   -  **Added Galois Configuration**
   -  Improved Documentation
   -  **Computing LZ complexity**
-  
+
   **Version: 1.0.6:**
   - Fixed the bugs (1) missing initial bit (2) exception
   - **Added test properties of LFSR**
@@ -159,7 +159,7 @@ print('Output: ',L.seq)
 ```
 Output :
 
-```	
+```
 count 	        state 		outbit 	 seq
 --------------------------------------------------
 0		[1 1 1]		-1	[-1]
@@ -240,7 +240,7 @@ for _ in range(35):
   L.next()
   fig.canvas.draw()
   plt.pause(0.1)
-  
+
 ```
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_1.gif" width="500"/>
@@ -384,7 +384,7 @@ fpolyDict = L.get_fpolyList()
 ```
 
 
-### Changing feedback polynomial in between 
+### Changing feedback polynomial in between
 ```
 L.changeFpoly(newfpoly =[23,14],reset=False)
 seq1 = L.runKCycle(20)
@@ -452,14 +452,13 @@ b3 = R3.state[10]
 ```
 
 
-
 # Geffe Generator
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/Geffe_0.jpg" width="500"/>
 </p>
 
 Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source code in C. john wiley & sons, 2007.
-	Chaper 16 
+	Chaper 16
 
 ```
 import numpy as np
@@ -481,9 +480,6 @@ GG.runKCycle(1000)
 GG.getSeq()
 ```
 
-
-
-
 _______________________________________________________________________________________________
 
 # MATLAB
@@ -491,21 +487,21 @@ ________________________________________________________________________________
 Folder : https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/tree/master/matlabfiles
 
 **Description**
-Genrate randon binary sequence using LFSR for any given feedback taps (polynomial), 
-This will also check Three fundamental Property of LFSR 
-1. Balance Property 
-2. Runlength Property 
+Genrate randon binary sequence using LFSR for any given feedback taps (polynomial),
+This will also check Three fundamental Property of LFSR
+1. Balance Property
+2. Runlength Property
 3. Autocorrelation Property
 
 **This MATLAB Code work for any length of LFSR with given taps (feedback polynomial) -Universal, There are three files LFSRv1.m an LFSRv2.m, LFSRv3.m**
 
 ### LFSRv1
-This function will return all the states of LFSR and will check Three fundamental Property of LFSR 
+This function will return all the states of LFSR and will check Three fundamental Property of LFSR
 (1) Balance Property (2) Runlength Property (3) Autocorrelation Property
 
 #### EXAMPLE
 ```
-s=[1 1 0 0 1] 
+s=[1 1 0 0 1]
 t=[5 2]
 [seq c] =LFSRv1(s,t)
 ```
@@ -515,7 +511,7 @@ This function will return only generated sequence will all the states of LFSR, n
 here. Use this function to avoid verification each time you execute the program.
 #### EXAMPLE
 ```
-s=[1 1 0 0 1] 
+s=[1 1 0 0 1]
 t=[5 2]
 [seq c] =LFSRv2(s,t)
 ```
@@ -534,8 +530,8 @@ seq =LFSRv3(s,t,50)
 
 
 ## Tips
-* If you want to use this function in middle of any program, use LFSRv2 or LFSRv1 with verification =0. 
-* If you want to make it fast for long length of LFSR,use LFSRv3.m 
+* If you want to use this function in middle of any program, use LFSRv2 or LFSRv1 with verification =0.
+* If you want to make it fast for long length of LFSR,use LFSRv3.m
 
 ______________________________________
 
@@ -561,7 +557,6 @@ If any doubt, confusion or feedback please contact me
 * http://nikeshbajaj.in
 * n.bajaj@imperial.ac.uk
 * n.bajaj@qmul.ac.uk
-* bajaj[dot]nikkey [AT]gmail?
+* bajaj[dot]nikkey[AT]gmail[dot]?
 ### PhD Student: Queen Mary University of London & University of Genoa
 ______________________________________
-

@@ -1,7 +1,7 @@
 LICENSE
-LICENSE.txt
 MANIFEST.in
 README.md
+Version
 requirements.txt
 setup.py
 examples/example1.py
@@ -10,6 +10,8 @@ examples/example_LFSR2.py
 pylfsr/__init__.py
 pylfsr/primitive_polynomials_GF2_dict.txt
 pylfsr/pylfsr.py
+pylfsr/seq_generators.py
+pylfsr/utils.py
 pylfsr.egg-info/PKG-INFO
 pylfsr.egg-info/SOURCES.txt
 pylfsr.egg-info/dependency_links.txt

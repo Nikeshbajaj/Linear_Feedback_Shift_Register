@@ -9,6 +9,14 @@ top_dir, _ = os.path.split(os.path.abspath(__file__))
 with open(os.path.join(top_dir, 'Version')) as f:
     version = f.readline().strip()
 
+if os.path.isfile(os.path.join(top_dir, 'Version')):
+    with open(os.path.join(top_dir, 'Version')) as f:
+        version = f.readline().strip()
+else:
+    import urllib
+    Vpath = 'https://raw.githubusercontent.com/Nikeshbajaj/Linear_Feedback_Shift_Register/master/Version'
+    version = urllib.request.urlopen(Vpath).read().strip().decode("utf-8")
+
 setuptools.setup(
     name="pylfsr",
     version= version,
@@ -41,8 +49,16 @@ setuptools.setup(
         'Topic :: Games/Entertainment :: Puzzle Games',
         'Topic :: Communications',
 
+        'Development Status :: 5 - Production/Stable',
+
 
     ],
+    project_urls={
+    'Documentation': 'https://lfsr.readthedocs.io',
+    'Say Thanks!': 'https://github.com/Nikeshbajaj',
+    'Source': 'https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register',
+    'Tracker': 'https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register/issues',
+    },
     include_package_data=True,
     install_requires=['numpy', 'matplotlib']
 )
