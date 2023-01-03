@@ -559,8 +559,9 @@ ______________________________________
 If any doubt, confusion or feedback please contact me
 * **Nikesh Bajaj**
 * http://nikeshbajaj.in
+* n.bajaj@imperial.ac.uk
 * n.bajaj@qmul.ac.uk
-* bajaj[dot]nikkey [AT]gmail[dot]com
+* bajaj[dot]nikkey [AT]gmail?
 ### PhD Student: Queen Mary University of London & University of Genoa
 ______________________________________
 
