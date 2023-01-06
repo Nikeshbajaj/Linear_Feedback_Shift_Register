@@ -515,6 +515,4 @@ Ref: Schneier, Bruce. Applied cryptography: protocols, algorithms, and source co
 
   GG.runKCycle(1000)
   GG.getSeq()
-
-**+**
-==========
+  
