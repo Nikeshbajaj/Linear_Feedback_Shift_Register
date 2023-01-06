@@ -32,6 +32,7 @@ This package includes following components:
    :maxdepth: 3
    
    LFSR_Examples
+   api
    matlab
    contacts
    lfsrClass
