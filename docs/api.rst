@@ -102,8 +102,10 @@ Getters:
 :``get_count()``: Get counter
 
 
+
 Testing LFSR Properties:
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 :``test_properties()``: Test all the properties for a valid LFSR
 :``balance_property(p)``: Test Balance property for a given sequence p
@@ -170,4 +172,5 @@ feedpoly : str
   feedback polynomial
 
 
-
+**+**
+==========
