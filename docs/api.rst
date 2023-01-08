@@ -7,8 +7,8 @@ Python implementation of LFSR
 
 ::
   
-  class pylfsr.LFSR(fpoly=[5, 2], initstate='ones', conf='fibonacci', 
-                    seq_bit_index=-1, verbose=False, counter_start_zero=True)
+  class pylfsr.LFSR(fpoly=[5, 2], initstate='ones', conf='fibonacci', seq_bit_index=-1, 
+                     verbose=False, counter_start_zero=True)
   
 
 Parameters:
@@ -75,7 +75,7 @@ Methods
 Clocking (running LFSR):
 ~~~~~~~~~
 
-.. list-table:: Clocking (running LFSR)
+.. list-table:: **Clocking (running LFSR)**
    :widths: 30 50
    :header-rows: 1
 
@@ -89,10 +89,11 @@ Clocking (running LFSR):
      - Executing/running a full period of cylces
 
 
+
 Setters :
 ~~~~~~~~~
 
-.. list-table:: Setting parameters
+.. list-table:: **Setting parameters**
    :widths: 30 50
    :header-rows: 1
 
@@ -113,7 +114,7 @@ Setters :
 Getters:
 ~~~~~~~~~
 
-.. list-table:: Getters Attributes
+.. list-table:: **Fetching Attributes**
    :widths: 30 50
    :header-rows: 1
 
@@ -144,7 +145,7 @@ Getters:
 Testing LFSR Properties:
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: Testing Properties of LFSR
+.. list-table:: **Testing Properties of LFSR**
    :widths: 30 80
    :header-rows: 1
 
@@ -167,7 +168,7 @@ Testing LFSR Properties:
 Displaying/printing:
 ~~~~~~~~~~~~~~~~
 
-.. list-table:: Displaying/printing
+.. list-table:: **Displaying/printing**
    :widths: 30 80
    :header-rows: 1
 
@@ -187,12 +188,12 @@ Displaying/printing:
 
 
 Deprecated/replaced methods :
-~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *These methods will be deprecated in future version 1.0.7*
 
 
-.. list-table:: Deprecated methods for future version
+.. list-table:: **Deprecated methods for future version**
    :widths: 30 80
    :header-rows: 1
 
@@ -210,8 +211,6 @@ Deprecated/replaced methods :
 
 
 .. 
-  
-  
   :``next()``: Executing/running one cycle
   :``runKCycle(k)``: Executing/running k cycles
   :``runFullPeriod()``: Executing/running a full period of cylces
