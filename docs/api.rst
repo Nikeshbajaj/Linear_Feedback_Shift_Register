@@ -74,14 +74,14 @@ Methods
 
 
 .. list-table:: Clocking (running LFSR)
-   :widths: 25 50
+   :widths: 50 50
    :header-rows: 1
 
    * - Method
      - Discription
    * - ``next()``
      - Executing/running one cycle
-   * - `runKCycle(k)``
+   * - ``runKCycle(k)``
      - Executing/running k cycles
    * - ``runFullPeriod()``
      - Executing/running a full period of cylces
