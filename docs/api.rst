@@ -71,6 +71,21 @@ seq_bit_index: int, index of shift register for output sequence:
 Methods
 -------
 
+
+
+.. list-table:: Clocking (running LFSR)
+   :widths: 25 50
+   :header-rows: 1
+
+   * - Method
+     - Discription
+   * - ``next()``
+     - Executing/running one cycle
+   * - `runKCycle(k)``
+     - Executing/running k cycles
+   * - ``runFullPeriod()``
+     - Executing/running a full period of cylces
+
 Clocking (running LFSR):
 ~~~~~~~~~
 
