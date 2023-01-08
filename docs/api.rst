@@ -72,9 +72,11 @@ Methods
 -------
 
 
+Clocking (running LFSR):
+~~~~~~~~~
 
 .. list-table:: Clocking (running LFSR)
-   :widths: 50 50
+   :widths: 30 50
    :header-rows: 1
 
    * - Method
@@ -86,26 +88,123 @@ Methods
    * - ``runFullPeriod()``
      - Executing/running a full period of cylces
 
-Clocking (running LFSR):
-~~~~~~~~~
-
-:``next()``: Executing/running one cycle
-:``runKCycle(k)``: Executing/running k cycles
-:``runFullPeriod()``: Executing/running a full period of cylces
-
 
 Setters :
 ~~~~~~~~~
 
+.. list-table:: Setting parameters
+   :widths: 30 50
+   :header-rows: 1
+
+   * - Method
+     - Discription
+   * - ``reset()```
+     - Reset to initial settings
+   * - ``set_fpoly(fpoly)``
+     - Change/set fpoly
+   * - ``set_conf(conf)``
+     - Change/set configuration
+   * - ``set_state(state)``
+     - Change/set state
+   * - ``set_seq_bit_index(bit_index)``
+     - Change/set seq_bit_index
+
+
+Getters:
+~~~~~~~~~
+
+.. list-table:: Getters Attributes
+   :widths: 30 50
+   :header-rows: 1
+
+   * - Method
+     - Discription
+   * - ``getFullPeriod()``
+     - Get sequence of a period
+   * - ``get_fPoly()``
+     - Get feedback polynomial
+   * - ``get_initState()``
+     - Get initial state
+   * - ``get_currentState()`` 
+     - Get current state
+   * - ``getState()``
+     - Get current state as string
+   * - ``get_outputSeq()``
+     - Get output sequence
+   * - ``getSeq()``
+     - Get output sequence as string
+   * - ``get_period()``
+     - Get period
+   * - ``get_expectedPeriod()``
+     - Get expected period
+   * - ``get_count()``
+     - Get counter
+
+
+Testing LFSR Properties:
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: Testing Properties of LFSR
+   :widths: 30 80
+   :header-rows: 1
+
+   * - Method
+     - Discription
+   * - ``test_properties()``
+     - Test all the properties for a valid LFSR
+   * - ``balance_property(p)``
+     - Test Balance property for a given sequence p
+   * - ``runlength_property(p)``
+     - Test Runlength property for a given sequence p
+   * - ``autocorr_property(p)``
+     - Test Autocorrelation property for a given sequence p
+   * - ``test_p(p)``
+     - Test three properties for a given sequence p
+
+
+
+
+Displaying/printing:
+~~~~~~~~~~~~~~~~
+
+.. list-table:: Displaying/printing
+   :widths: 30 80
+   :header-rows: 1
+
+   * - Method
+     - Discription
+   * - :``info()``: Display all the attribuates of LFSR
+   * - :``print(L [LFSR Object] )``: Display all the attribuates of LFSR (where ``L = LFSR()``)
+   * - :``repr(L [LFSR Object] )``: Display all the input parameters of LFSR (where ``L = LFSR()``)
+   * - :``info()``: Display all the attribuates of LFSR
+   * - :``Viz()``: Display LFSR as a figure with a current state of LSFR with feedback polynomials and given configuration
+
+
+
+
+Deprecated/replaced methods :
+~~~~~~~~~
+
+*These methods will be deprecated in future version 1.0.7*
+
+:``runFullCycle()``: Changed to ``runFullPeriod()``, full cycle is misnomer 
+:``set()``: : Changed to ``set_fpoly`` and ``set_state`` 
+:``changeFpoly(newfpoly)``: : Changed to ``set_fpoly``
+:``change_conf(conf)``:     : Changed to ``set_conf``
+
+
+
+
+
+
+:``next()``: Executing/running one cycle
+:``runKCycle(k)``: Executing/running k cycles
+:``runFullPeriod()``: Executing/running a full period of cylces
 :``reset()``: Reset to initial settings
 :``set_fpoly(fpoly)``: Change/set fpoly
 :``set_conf(conf)``:  Change/set configuration
 :``set_state(state)``:  Change/set state
 :``set_seq_bit_index(bit_index)``: Change/set seq_bit_index
-
-Getters:
-~~~~~~~~~
-
 :``getFullPeriod()``: Get sequence of a period
 :``get_fPoly()``: Get feedback polynomial
 :``get_initState()``: Get initial state
@@ -116,37 +215,16 @@ Getters:
 :``get_period()``: Get period
 :``get_expectedPeriod()``: Get expected period
 :``get_count()``: Get counter
-
-
-
-Testing LFSR Properties:
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 :``test_properties()``: Test all the properties for a valid LFSR
 :``balance_property(p)``: Test Balance property for a given sequence p
 :``runlength_property(p)``: Test Runlength property for a given sequence p
 :``autocorr_property(p)``: Test Autocorrelation property for a given sequence p
 :``test_p(p)``: Test three properties for a given sequence p
-
-
-Displaying/printing:
-~~~~~~~~~~~~~~~~
-
 :``info()``: Display all the attribuates of LFSR
 :``print(L [LFSR Object] )``: Display all the attribuates of LFSR (where ``L = LFSR()``)
 :``repr(L [LFSR Object] )``: Display all the input parameters of LFSR (where ``L = LFSR()``)
 :``info()``: Display all the attribuates of LFSR
 :``Viz()``: Display LFSR as a figure with a current state of LSFR with feedback polynomials and given configuration
-
-
-
-
-Deprecated/replaced methods :
-~~~~~~~~~
-
-*These methods will be deprecated in future version 1.0.7*
-
 :``runFullCycle()``: Changed to ``runFullPeriod()``, full cycle is misnomer 
 :``set()``: : Changed to ``set_fpoly`` and ``set_state`` 
 :``changeFpoly(newfpoly)``: : Changed to ``set_fpoly``
