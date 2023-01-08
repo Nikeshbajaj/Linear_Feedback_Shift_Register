@@ -7,7 +7,8 @@ Python implementation of LFSR
 
 ::
   
-  class pylfsr.LFSR(fpoly=[5, 2], initstate='ones', conf='fibonacci', seq_bit_index=-1, verbose=False, counter_start_zero=True)
+  class pylfsr.LFSR(fpoly=[5, 2], initstate='ones', conf='fibonacci', 
+                    seq_bit_index=-1, verbose=False, counter_start_zero=True)
   
 
 Parameters:
