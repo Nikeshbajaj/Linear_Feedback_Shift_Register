@@ -1,4 +1,4 @@
-Displaying & Visualization
+**Displaying & Visualization**
 ==========================
 
 **Printing/Displaying Info**
