@@ -1,4 +1,4 @@
-API LFSR
+API: LFSR Class
 =========
 Linear Feedback Shift Register
 
