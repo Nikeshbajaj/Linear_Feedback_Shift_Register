@@ -1,8 +1,8 @@
-.
+
 ====================
 
 
-API: Supporting Functions
+API : Supporting Functions
 -------------------
 
 Supporting Functions for Linear Feedback Shift Register
@@ -121,6 +121,7 @@ lempel_ziv_complexity(seq)
     
     
 lempel_ziv_patterns(seq)
+    
     Lempel-Ziv patterns.
     It is defined as a set of different patterns exists in a given sequence.
     
@@ -138,5 +139,4 @@ lempel_ziv_patterns(seq)
     
     
 
-**+**
-==========
+
