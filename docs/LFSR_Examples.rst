@@ -114,6 +114,3 @@ To construct LSFR with Galois configuration , pass conf = 'galois'
    Count        :  0
    Output bit   :  -1
    feedback bit :  -1
-
-**+**
-----------
