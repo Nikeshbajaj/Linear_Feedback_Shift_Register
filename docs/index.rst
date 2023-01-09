@@ -22,8 +22,18 @@ Linear Feedback Shift Register - Documentation
   :alt: GitHub
 
 
+..
+  .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif
+    :width: 400
 
-.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif
+
+
+.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/FibanacciLFSR_2.gif
+  :width: 50 %
+
+.. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/GaloisLFSR_1.gif
+  :width: 50 %
+
 
 Linear Feedback Shift Register.
 This package includes following components:
