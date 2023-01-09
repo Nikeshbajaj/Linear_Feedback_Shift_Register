@@ -1,9 +1,8 @@
-API : Supporting Functions
+API Supporting Functions
 -------------------
 
 Supporting Functions for Linear Feedback Shift Register
 
--------------------
 
 
 get_fpolyList(m=None):
