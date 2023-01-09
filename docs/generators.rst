@@ -1,4 +1,4 @@
-Generators
+**Generators**
 ==========
 
 **A5/1 GSM Stream cipher generator**
