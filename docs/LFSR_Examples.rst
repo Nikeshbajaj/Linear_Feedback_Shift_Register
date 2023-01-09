@@ -2,7 +2,7 @@
 =========
 
 **Basic Examples:**
-----------
+=========
 
 5-bit LFSR with feedback polynomial: x\ :sup:`5`\ + x\ :sup:`2`\ +1
 ----------
