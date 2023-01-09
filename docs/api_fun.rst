@@ -2,7 +2,7 @@
 ====================
 
 
-Supporting Functions
+API: Supporting Functions
 -------------------
 
 Supporting Functions for Linear Feedback Shift Register
