@@ -195,6 +195,3 @@ Visualize, 3-bit LFSR at each step, with *counter_start_zero = False*
   --------------------------------------------------
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
-
-**+**
-----------
