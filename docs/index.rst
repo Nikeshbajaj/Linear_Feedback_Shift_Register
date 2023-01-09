@@ -56,6 +56,7 @@ This package includes following components:
    
    LFSR_Examples
    api
+   api_fun
    matlab
    contacts
    lfsrClass
