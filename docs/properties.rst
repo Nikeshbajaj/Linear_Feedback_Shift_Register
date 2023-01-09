@@ -1,4 +1,4 @@
-LFSR Properties & Tests
+**LFSR Properties & Tests**
 =======================
 
 **LFSR Properties:**: Test 3+1 properties of LFSR
