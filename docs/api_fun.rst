@@ -1,4 +1,4 @@
-
+.
 ====================
 
 
@@ -7,9 +7,10 @@ API: Supporting Functions
 
 Supporting Functions for Linear Feedback Shift Register
 
+-------------------
 
 
-get_fpolyList(m=None)
+get_fpolyList(m=None):
     
     Get the list of primitive polynomials as feedback polynomials for m-bit LFSR.
     Only half list of primary primitive polynomials are retuned, not the full list (half list), since for each primary primitive polynomial
@@ -40,7 +41,7 @@ get_fpolyList(m=None)
       [[5, 2], [5, 4, 2, 1], [5, 4, 3, 2]]
     
  
- get_Ifpoly(fpoly)
+get_Ifpoly(fpoly)
     
     Get image of feebback polynomial
     Get the image of primitive polynomial
@@ -119,7 +120,6 @@ lempel_ziv_complexity(seq)
     lc: number of different patterns in LZ dictionary
     
     
-
 lempel_ziv_patterns(seq)
     Lempel-Ziv patterns.
     It is defined as a set of different patterns exists in a given sequence.
