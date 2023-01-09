@@ -279,6 +279,3 @@ T : int (also saved as expectedPeriod)
 feedpoly : str
   feedback polynomial
 
-
-**+**
-==========
