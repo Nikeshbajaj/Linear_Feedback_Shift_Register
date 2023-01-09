@@ -1,8 +1,12 @@
-Supporting Functions
-====================
-Linear Feedback Shift Register
 
-Python implementation of LFSR
+====================
+
+
+Supporting Functions
+-------------------
+
+Supporting Functions for Linear Feedback Shift Register
+
 
 
 get_fpolyList(m=None)
