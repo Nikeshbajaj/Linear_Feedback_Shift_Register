@@ -29,10 +29,9 @@ Linear Feedback Shift Register - Documentation
 
 
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/FibanacciLFSR_2.gif
-  :width: 50 %
-
+  :width: 45 %
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/GaloisLFSR_1.gif
-  :width: 50 %
+  :width: 45 %
 
 
 Linear Feedback Shift Register.
