@@ -209,7 +209,3 @@ Changing configuration in between
   L.set_conf(conf='galois',reset=False)
   seq1 = L.runKCycle(20)
   
-
-
-**+**
-----------
