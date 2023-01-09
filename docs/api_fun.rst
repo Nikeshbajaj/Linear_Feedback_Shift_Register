@@ -95,3 +95,43 @@ dispLFSR(state, fpoly, conf='fibonacci', seq='', out_bit_index=-1, ob=None, fb=N
       PYL.dispLFSR(state=[1,1,1,1,0], fpoly=[5,3], conf='fibonacci', seq='111', title='R1')
 
 
+
+lempel_ziv_complexity(seq)
+    
+    Lempel-Ziv Complexity.
+    It is defined as the number of different patterns exists in a given stream.
+    
+    As an example:
+    s = '1001111011000010'
+    patterns ==> 1, 0, 01, 11, 10, 110, 00, 010
+    #patterns = 8
+    
+    Parameters
+    ---------
+    seq: as string of sequence, could be binary or any other
+    
+    returns
+    -------
+    lc: number of different patterns in LZ dictionary
+    
+    
+
+lempel_ziv_patterns(seq)
+    Lempel-Ziv patterns.
+    It is defined as a set of different patterns exists in a given sequence.
+    
+    As an example:
+    s = '1001111011000010'
+    patterns ==> 1, 0, 01, 11, 10, 110, 00, 010
+
+    Parameters
+    ---------
+    seq: as string of sequence, could be binary or any other
+    
+    returns
+    -------
+    dictionary of all the LZ patterns in given sequence
+    
+    
+
+
