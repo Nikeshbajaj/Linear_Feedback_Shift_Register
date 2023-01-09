@@ -38,9 +38,11 @@ Download the repository or clone it with git, after cd in directory build it fro
 **Basic Examples:**
 ----------
 
-Example 1: 5-bit LFSR with feedback polynomial: x\ :sup:`5`\ + x\ :sup:`2`\ +1
+5-bit LFSR with feedback polynomial: x\ :sup:`5`\ + x\ :sup:`2`\ +1
 ----------
-default feedback polynomial is p(x) = x\ :sup:`5`\ + x\ :sup:`2`\ + 1
+
+Default feedback polynomial is p(x) = x\ :sup:`5`\ + x\ :sup:`2`\ + 1
+
 ::
   
   # import LFSR
@@ -61,14 +63,26 @@ default feedback polynomial is p(x) = x\ :sup:`5`\ + x\ :sup:`2`\ + 1
   feedback bit : -1
 
 
+Execute cycles (run LFSR by clock)
+----------
+
 ::
   
+  # one cycle
   L.next()
-  L.runKCycle(10)
-  L.runFullCycle()
-  L.info()
+  
+  # K cycles
+  k=10
+  seq  = L.runKCycle(k)
+  
+  #Cycles of a full period, #cycles = expected period of LFSR
+  
+  # L.runFullCycle()  # Depreciated
+  seq = L.runFullPeriod()
+  
+  
 
-Example 2: 5-bit LFSR with custum state and feedback polynomial
+5-bit LFSR with custom state and feedback polynomial
 ----------
 
 ::
@@ -80,7 +94,30 @@ Example 2: 5-bit LFSR with custum state and feedback polynomial
   tempseq = L.runKCycle(10)
   L.set(fpoly=[5,3])
 
-Example 3: 23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`18`\ +1
+
+Fibonacci LFSR
+----------
+By deault, LFSR is in Fibonacci configuration mode, but it can be implicitly set to Fibonacci conf
+
+::
+  
+  L = LFSR(fpoly = [5,4,3,2], conf='fibonacci') 
+  L.Viz(show_outseq=False)
+
+
+Galois LFSR
+----------
+To construct LSFR with Galois configuration , pass conf = 'galois'
+
+::
+  
+  L = LFSR(fpoly = [5,4,3,2], conf='galois') 
+  L.Viz(show_outseq=False)
+
+
+
+
+23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`18`\ +1
 ----------
 
 ::
@@ -92,7 +129,7 @@ Example 3: 23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`18`\ +1
   seq = L.seq
 
 
-Example 4: 23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`5`\ +1
+23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`5`\ +1
 ----------
 
 ::
@@ -115,11 +152,69 @@ Example 4: 23-bit LFSR: x\ :sup:`23`\ + x\ :sup:`5`\ +1
 **+**
 ----------
 
+
+**Printing/Displaying Info**
+----------
+
+
+Current info
+~~~~~~~~~
+
+::
+  
+  state = [0,0,0,1,0]
+  fpoly = [5,4,3,2]
+  L = LFSR(fpoly=fpoly,initstate =state, verbose=True)
+  L.info()
+  
+
+5-bit LFSR with feedback polynomial  x^5 + x^4 + x^3 + x^2 + 1 with
+Expected Period (if polynomial is primitive) =  31
+Computing configuration is set to Fibonacci with output sequence taken from 5-th (-1) register
+Current :
+ State        :  [0 0 0 1 0]
+ Count        :  0
+ Output bit   :  -1
+ feedback bit :  -1
+
+
+
+::
+  
+  print(L)
+  
+	LFSR ( x^5 + x^4 + x^3 + x^2 + 1)
+	==================================================
+	initstate 	=	[0 0 0 1 0]
+	fpoly     	=	[5, 4, 3, 2]
+	conf      	=	fibonacci
+	order     	=	5
+	expectedPeriod	=	31
+	seq_bit_index	=	-1
+	count     	=	0
+	state     	=	[0 0 0 1 0]
+	outbit    	=	-1
+	feedbackbit	=	-1
+	seq       	=	[-1]
+	counter_start_zero	=	True
+
+
+Parameters setting
+~~~~~~~~~
+
+
+::
+  
+  repr(L)
+
+"LFSR('fpoly'=[5, 4, 3, 2], 'initstate'=[0, 0, 0, 1, 0],'conf'=fibonacci, 'seq_bit_index'=-1,'verbose'=True, 'counter_start_zero'=True)"
+
+
 **Poltting & Visualizations:**
 ----------
 
-Example 5: Plotting LFSR with pylsr
-----------
+Plotting LFSR with pylsr
+~~~~~~~~~
 
 Each LFSR can be visualize as it in current state by using *.Viz()* method 
 
@@ -132,7 +227,8 @@ Each LFSR can be visualize as it in current state by using *.Viz()* method
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_1.jpg
 
 
-Example 6: Dynamic visualization of LFSR - Animation*
+
+**Dynamic visualization of LFSR - Animation**
 ----------
 
 ::
@@ -172,7 +268,7 @@ when setting *counter_start_zero = False*, there will be one extra bit, since fi
 *counter_start_zero=True* can be seen as dealyed response by one bit.
 
 
-Example 7.1: Visualize, 3-bit LFSR at each step, with default *counter_start_zero = True*
+Visualize, 3-bit LFSR at each step, with default *counter_start_zero = True*
 ----------
 
 ::
@@ -211,7 +307,7 @@ Example 7.1: Visualize, 3-bit LFSR at each step, with default *counter_start_zer
   Output:  [1 1 1 0 0 1 0 1 1 1 0 0 1 0 1]
   
   
-Example 7.2: Visualize, 3-bit LFSR at each step, with *counter_start_zero = False*
+Visualize, 3-bit LFSR at each step, with *counter_start_zero = False*
 ----------
 
 ::
@@ -261,7 +357,7 @@ Example 7.2: Visualize, 3-bit LFSR at each step, with *counter_start_zero = Fals
   * (2) Runlength Property
   * (3) Autocorrelation Property
 
-Example 8.1: test [5,3], for 5-bit LFSR, which we know is a primitive polynomial
+Test LFSR [5,3], for 5-bit LFSR, which we know is a primitive polynomial
 ----------
 
 ::
@@ -304,7 +400,7 @@ Example 8.1: test [5,3], for 5-bit LFSR, which we know is a primitive polynomial
 
 
 
-Example 8.2: test [5,1], for 5-bit LFSR, which we know is ***NOT*** a primitive polynomial
+Test LFSR [5,1], for 5-bit LFSR, which we know is ***NOT*** a primitive polynomial
 ----------
 
 ::
@@ -345,7 +441,7 @@ Example 8.2: test [5,1], for 5-bit LFSR, which we know is ***NOT*** a primitive 
 .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/acorr_test_npf.jpg
 
 
-Example 8.3: test individual properties
+Test individual properties
 ----------
 
 ::
@@ -374,10 +470,24 @@ list include half of polynomials for each degree and other half can be compputed
 
 Ref : http://www.partow.net/programming/polynomials/index.html
 
-Example 9.1: Get a list of feedback polynomials for a m-bit LFSR
+Get a list of feedback polynomials for a m-bit LFSR
 ----------
 
 ::
+  
+  import pylfsr as PYL
+  PYL.get_fpolyList(m=5)
+  [[5, 2], [5, 4, 2, 1], [5, 4, 3, 2]]
+  
+  # list of all feedback polynomials as a dictionary
+  fpolyDict = PYL.get_fpolyList()
+
+
+Or optional way, if LFSR object is already in place
+
+::
+  
+  from pylfsr import LFSR
   
   L = LFSR()
   # list of 5-bit feedback polynomials
@@ -388,7 +498,7 @@ Example 9.1: Get a list of feedback polynomials for a m-bit LFSR
   fpolyDict = L.get_fpolyList()
 
 
-Example 9.2: Get a image replica of a feedback polynomial
+Get a image replica of a feedback polynomial
 ----------
 Image replica of a primitive polynomial is a primitive polynomial, hence a valid feedback polynomial for LFSR
 For m-bit primitive polynomial p(x) = x^m + x^k + .. + 1, a image replica is ip(x) = x^(-m)p(x)
@@ -400,13 +510,21 @@ where 0 < k < m
   L.get_Ifpoly([5,3])
   [5, 2]
   
+
 ::
   
   L.get_Ifpoly([5,4,3,2])
   [5, 3, 2, 1]
 
+::
+  
+  import pylfsr as PYL
+  PYL.get_Ifpoly([5,4,3,2])
+  [5, 3, 2, 1]
+  
 
-Example 9.3: Changing feedback polynomial in between
+
+Changing feedback polynomial in between
 ----------
 
 After generating some bits from an LFSR, a feedback polynomial can be changed keeping the current state as intial state and generate
@@ -418,12 +536,28 @@ the new sequece.
   seq0 = L.runKCycle(10)
   
   # Change after 10 clocks
-  L.changeFpoly(newfpoly =[23,14],reset=False)
+  #L.changeFpoly(newfpoly =[23,14],reset=False)
+  L.set_fpoly(fpoly =[23,14],reset=False)
   seq1 = L.runKCycle(20)
   
   # Change after 20 clocks
-  L.changeFpoly(newfpoly =[23,9],reset=False)
+  L.set_fpoly(fpoly=[23,9],reset=False)
   seq2 = L.runKCycle(20)
+
+
+Changing configuration in between
+----------
+
+::
+  
+  L = LFSR(fpoly=[23,18],initstate ='ones',conf='fibonacci')
+  seq0 = L.runKCycle(10)
+  
+  # Change after 10 clocks
+  L.set_conf(conf='galois',reset=False)
+  seq1 = L.runKCycle(20)
+  
+
 
 **+**
 ----------
