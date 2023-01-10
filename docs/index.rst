@@ -22,6 +22,8 @@ Linear Feedback Shift Register - Documentation
   :alt: GitHub
 
 
+
+
 ..
   .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif
     :width: 400
