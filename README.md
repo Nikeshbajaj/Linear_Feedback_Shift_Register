@@ -24,11 +24,14 @@
 [![PyPI download week](https://img.shields.io/pypi/dw/pylfsr.svg)](https://pypi.org/project/pylfsr/)
 [![Hits-of-Code](https://hitsofcode.com/github/Nikeshbajaj/Linear_Feedback_Shift_Register)](https://hitsofcode.com/github/Nikeshbajaj/Linear_Feedback_Shift_Register/view)
 
-[![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://pypi.org/project/pylfsr/)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
-
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/spkit?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/Nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
 ![CircleCI](https://img.shields.io/circleci/build/github/Nikeshbajaj/Linear_Feedback_Shift_Register?style=social)
+
+[![Generic badge](https://img.shields.io/badge/pip%20install-pylfsr-blue.svg)](https://pypi.org/project/pylfsr/)
+[![Ask Me!](https://img.shields.io/badge/Ask%20me-1abc9c.svg)](mailto:n.bajaj@qmul.ac.uk)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7501241.svg)](https://doi.org/10.5281/zenodo.7501241)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/FibanacciLFSR_2.gif" width="500"/>
