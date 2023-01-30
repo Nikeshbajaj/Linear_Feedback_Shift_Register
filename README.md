@@ -98,6 +98,11 @@
 pip install pylfsr
 ```
 
+### conda
+
+```
+conda install -c nikeshbajaj pylfsr
+```
 
 ### Build from the source
 Download the repository or clone it with git, after cd in directory build it from source with
