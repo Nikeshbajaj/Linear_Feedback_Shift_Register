@@ -104,6 +104,8 @@ pip install pylfsr
 conda install -c nikeshbajaj pylfsr
 ```
 
+*in process of including in conda-forge*
+
 ### Build from the source
 Download the repository or clone it with git, after cd in directory build it from source with
 
