@@ -1,6 +1,6 @@
 # LFSR -Linear Feedback Shift Register
 
-# [](https://pylfsr.github.io)
+# [Homepage](https://pylfsr.github.io)
 
 ## Links: **[Github Page](http://pylfsr.github.io/)** | **[Documentation](https://lfsr.readthedocs.io/)** | **[Github](https://github.com/Nikeshbajaj/Linear_Feedback_Shift_Register)**  |  **[PyPi - project](https://pypi.org/project/pylfsr/)** |     _ **Installation:** [pip install pylfsr](https://pypi.org/project/pylfsr/)
 -----
