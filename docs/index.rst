@@ -2,7 +2,8 @@ Linear Feedback Shift Register - Documentation
 ==============================
 
 
-# [Homepage](https://pylfsr.github.io)
+
+# Checkout New `Homepage <https://pylfsr.github.io>`_
 ==============================
 
 
@@ -38,6 +39,10 @@ Linear Feedback Shift Register - Documentation
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7501241.svg
    :target: https://doi.org/10.5281/zenodo.7501241
 
+
+
+# Checkout New `Homepage <https://pylfsr.github.io>`_
+==============================
 
 ..
   .. image:: https://raw.githubusercontent.com/nikeshbajaj/Linear_Feedback_Shift_Register/master/images/5bit_6.gif
@@ -93,3 +98,8 @@ This package includes following components:
    matlab
    contacts
    lfsrClass
+   
+   
+   
+
+# Checkout New `Homepage <https://pylfsr.github.io>`_
