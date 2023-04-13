@@ -105,17 +105,19 @@ This package includes following components:
 # Checkout New `Homepage <https://pylfsr.github.io>`_
 
 
+.. raw:: html
 
+    <embed>
+        hh
+    </embed>
 
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Teaching</title>
-     <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="0; URL=https://PyLFSR.github.io" />
-   </head>
-   <body>
-     <p>This page has been moved. If you are not redirected within 3 seconds, click <a href="https://PyLFSR.github.io">here</a> to go to the Teaching.</p>
-   </body>
-</html>
+    <html>
+        <head>
+            <title>Teaching</title>
+         <meta charset="UTF-8" />
+         <meta http-equiv="refresh" content="0; URL=https://PyLFSR.github.io" />
+       </head>
+       <body>
+         <p>This page has been moved. If you are not redirected within 3 seconds, click <a href="https://PyLFSR.github.io">here</a> to go to the Teaching.</p>
+       </body>
+    </html>
