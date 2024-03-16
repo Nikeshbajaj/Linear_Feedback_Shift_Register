@@ -27,19 +27,23 @@ function seq = LFSRv3(s,t,N)
 %--------------------------------------------------
 
 n=length(s);
-c(1,:)=s;
 m=length(t);
-seq(1) = s(n)
 % N = 2^n-2
+% Pre-computation to make it fast 
+% Suggested by https://github.com/kaimex
+seq=zeros(N,1);  
+seq(1) = s(n)
+j=1:n-1;
+nj = n-j
+nj_1 = n+1-j
 for k=1:N-1;
     b(1)=xor(s(t(1)), s(t(2)));
     if m>2;
         for i=1:m-2;
-        b(i+1)=xor(s(t(i+2)), b(i));
+          b(i+1)=xor(s(t(i+2)), b(i));
         end
     end
-    j=1:n-1;
-    s(n+1-j)=s(n-j);
+    s(nj_1)=s(nj);
     s(1)=b(m-1);
     seq(k+1)=s(n);
 end
